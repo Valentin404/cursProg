@@ -1,0 +1,84 @@
+.containerAllCurs {
+    /* height: 1000px; */
+    /* background-color: blanchedalmond; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0;
+    margin: 15px 0;
+    border-bottom: #272727 2px solid;
+    cursor: pointer;
+}
+.currntCursA {
+
+    margin: 20px;
+    height: 330px;
+    flex: 1 30vw;
+    /* width: 30vw; */
+    min-width: 270px;
+    max-width: 450px;
+}
+.currntCurs {
+    
+    background-color: aliceblue;
+background-color: rgb(143, 143, 34);
+background-color: #747b8c;
+background-color: #272727;
+
+box-shadow: 1px 0px 4px black;
+border-radius: 12px;
+}
+.contImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    transition: .2s all;
+}
+.contImg:hover img {
+    opacity: .3;
+}
+.contImg img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+.textDescriptionforHover {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    /* background-color: aliceblue; */
+    padding: 0 10px;
+    opacity: 0;
+    /* min-width: 220px;
+    max-width: 450px; */
+    text-align: center;
+}
+.contImg:hover .textDescriptionforHover {
+    opacity: 1;
+}
+.textForCurs {
+    /* background-color: aquamarine; */
+    height: 90px;
+    padding: 0 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.textForCurs h3 {
+    color: aliceblue !important;
+    margin: 0;
+
+}
+
+@media only screen and (max-width: 767px) {
+   
+    ul#nav {
+        max-height: 85vh;
+    }
+}

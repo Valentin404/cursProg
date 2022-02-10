@@ -22,17 +22,27 @@ function paintThecurrentCours(index) {
     </div>`;
 }
 
-document.getElementById("containre_courses").addEventListener("click", (e) => {
-    if (e.target.value + 1) {
-        paintThecurrentCours(+e.target.value);
-    }
-});
-document.getElementById("containre_courses").addEventListener("touchstart", (e) => {
-    if (e.target.value + 1) {
-        paintThecurrentCours(+e.target.value);
-    }
+const AllEventForIndex = ()=>{
+   const containre_courses =  document.getElementById("containre_courses")
+    if(containre_courses){
 
-});
+        containre_courses.addEventListener("click", (e) => {
+            if (e.target.value + 1) {
+                paintThecurrentCours(+e.target.value);
+            }
+        });
+    
+
+    containre_courses.addEventListener("touchstart", (e) => {
+        if (e.target.value + 1) {
+            paintThecurrentCours(+e.target.value);
+        }
+    
+    });
+}
+}
+AllEventForIndex()
+
 
 document.querySelector(".submenu").addEventListener("Touch", (e) => {
     console.log(e.target.className);
