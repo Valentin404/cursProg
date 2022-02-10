@@ -49,11 +49,8 @@ border-radius: 12px;
     /* display: none; */
     position: absolute;
     width: 100%;
-    /* background-color: aliceblue; */
     padding: 0 10px;
     opacity: 0;
-    /* min-width: 220px;
-    max-width: 450px; */
     text-align: center;
 }
 .contImg:hover .textDescriptionforHover {

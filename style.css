@@ -733,6 +733,9 @@ body::-webkit-scrollbar-thumb{
     background-color: #687275;
     border-radius: 20px;
 }
+.navbar-header{
+    position: fixed !important;
+}
 @media only screen and (max-width: 767px) {
    
     ul#nav {
