@@ -1,6 +1,6 @@
 // 
 document.querySelector('.containerAllCurs').innerHTML = list_Our_Courses.map(elem => `
- <a class="currntCursA" href="./curs/${elem.page}">
+ <a class="currntCursA" href="./${elem.page}">
  <div class="currntCurs">
  <div class="contImg">
  <img src="${elem.img}">

@@ -12,7 +12,7 @@ const AddCurs = ()=>{
     <div class="course-details">
     <h3 class="font30 item-title">${elem.title}</h3>
     </div>
-    <p class="mt30" id="Backend"><a href="./curs/${elem.page}" class="enroll-button">Подробнее</a> <span class="course-price">${elem.price.uan_max} грн</span></p>
+    <p class="mt30" id="Backend"><a href="./${elem.page}" class="enroll-button">Подробнее</a> <span class="course-price">${elem.price.uan_max} грн</span></p>
     </div>
     </div>`).join('')
 }
@@ -32,5 +32,5 @@ const AddCurs = ()=>{
 
         document.querySelector('.submenu').innerHTML = list_Our_Courses
         .map((elem,ind)=>`
-        <li><a class="${ind+1}" href="./curs/${elem.page}">${elem.title}</a></li>
+        <li><a class="${ind+1}" href="./${elem.page}">${elem.title}</a></li>
         `).join('')

@@ -239,7 +239,7 @@ const list_Our_Courses = [{
         id: id(),
         title :'Full Stack Developer',
         text: " FullStack программист совмещает в себе знания Front-End и Backend. Такие специалисты пользуются большим спросом на рынке труда и даже на старте претендуют на высокие зарплаты.",
-        img: "./assest/img/course/backEnd.png",
+        img: "./assest/img/course/full-stack-developer.jpg",
         start: "В скором времени",
         price: {
             uan_one: 3500,
