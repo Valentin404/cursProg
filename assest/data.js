@@ -4,10 +4,441 @@ function id() {
     return newId++;
 }
 // сюда можно добаить больше инфы
+
+
+
+const HTML_CSS = [
+    "Настройка окружения, основы Git",
+    "Базовая разметка и структура HTML-страницы",
+    "Все основные HTML теги",
+    "Знакомство с CSS и стилями для текста, единицы измерения",
+    "Свойства display (flex,block,inline-block)..",
+    "CSS-свойства (margin, padding, box-shadow)",
+    "Position (absolute, relative, static)..",
+    "Свойства grid",
+    "Адаптивная верстка, подключение шрифтов",
+    "Анимация (burger menu)",
+    "Работа над ошибками",
+    "Анимация для(hover,focus,active)",
+    "Анимация (burger menu)",
+    "Продвинутая анимация",
+    "Анимация титров",
+    'Параллакс анимация',
+    "Работа над ошибками, (создание резюме для работы)",
+]
+
+const CSSAdvanced = [
+    "Настройка окружения, основы Git, вспоминаем CSS",
+    "Анимация для(hover,focus,active)",
+    "Анимация (burger menu)",
+    "Продвинутая анимация",
+    "Анимация титров",
+    'Параллакс анимация',
+    "Работа над ошибками, (создание резюме для работы)",
+
+]
+const CSS_simple = [
+    "Настройка окружения, основы Git",
+    "Знакомство с CSS и стилями для текста, единицы измерения",
+    "Свойства display (flex,block,inline-block)..",
+    "CSS-свойства (margin, padding, box-shadow)",
+    "Position (absolute, relative, static)..",
+    "Свойства grid",
+    "Адаптивная верстка, подключение шрифтов",
+    "Анимация (burger menu)",
+    "Работа над ошибками, (создание резюме для работы)",
+    
+]
+
+const JS = [
+    'Знакомство с Javascript , тип данных',
+    "Свойства тегов HTML, основы Git",
+    "Первое событие, поверхностное знакомство с function",
+    'Оператор if else',
+    'Оператор switch',
+    'Тернарные  операторы',
+    'Работа с формой в Js',
+    'Цикл while (do while)',
+    'Цикл for (Вложеные циклы)',
+    'Declaration функции',
+    'Expression функции (Самовызывающаяся функция)',
+    "Основы массивов",
+    "Основные методы массивов",
+    'Методы массивов',
+    'Взаимодействие методов между собой',
+    'Основы объектов',
+    "Певый мини проект (Взаимодействие массивов и объектов)",
+    "LocalStorage и sessionStorage",
+    "События мышки",
+    "События клавиатуры",
+    'Тач события',
+    "Мини проект событий",
+    "Слайдер",
+    "Фильтр текста",
+    "Магазинный фильтр",
+    "Regex",
+    'Замыкание и Рекурсия',
+    "This, apply,call,bind, proto, prototype",
+    "class, constructor, cuper",
+    "работа с  Api (асинхронный код)",
+    'Полноценный проект (Пишем свой Google на js) часть 1',
+    'Полноценный проект (Пишем свой Google на js) часть 2',
+    'Полноценный проект (Пишем свой Google на js) часть 3',
+    "Работа над ошибками, (создание резюме для работы)",
+    
+    
+    
+]
+const React = [
+    "Вспоминаем основы js (Git)",
+    "Regex",
+    'Замыкание и Рекурсия',
+    "This, apply,call,bind, proto, prototype",
+    "class, constructor, cuper",
+    "работа с  Api (асинхронный код)",
+    "Знакомство с React (насройка окружения)",
+    "React компоненты и props",
+    "Первый хук, useState",
+    "useMemo",
+    "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
+    "useEffect и axios",
+    "HOC",
+    "useContext",
+    "Знакомство с разными библиотеками для React",
+    "Login (авторегистрация)",
+    "Взаимодействие разных аккаунтов вашей соц сети",
+    "Отправка локальных фото в сеть (axios post,put...)",
+    "Создаем чат между пользователями часть 1",
+    "Создаем чат между пользователями часть 2",
+    "Создаем чат между пользователями часть 3",
+    "Работа над ошибками, (создание резюме для работы)",
+//Кр сделать компоненту настройки
+
+]
+
+const FrontEnd = [
+    "Базовая разметка и структура HTML-страницы",
+    "Все основные HTML теги",
+    "Знакомство с CSS и стилями для текста, единицы измерения",
+    "Свойства display (flex,block,inline-block)..",
+    "CSS-свойства (margin, padding, box-shadow)",
+    "Position (absolute, relative, static)..",
+    "Свойства grid",
+    "Адаптивная верстка, подключение шрифтов",
+    "Анимация (burger menu)",
+    "Продвинутая анимация",
+    'Параллакс анимация',
+    "Работа над ошибками",
+    'Знакомство с Javascript , тип данных',
+    "Свойства тегов HTML, основы Git",
+    "Первое событие, поверхностное знакомство с function",
+    'Оператор if else',
+    'Оператор switch',
+    'Тернарные  операторы',
+    'Работа с формой в Js',
+    'Цикл while (do while)',
+    'Цикл for (Вложеные циклы)',
+    'Declaration функции',
+    'Expression функции (Самовызывающаяся функция)',
+    "Основы массивов",
+    "Основные методы массивов",
+    'Методы массивов',
+    'Взаимодействие методов между собой',
+    'Основы объектов',
+    "Певый мини проект (Взаимодействие массивов и объектов)",
+    "LocalStorage и sessionStorage",
+    "События мышки",
+    "События клавиатуры",
+    'Тач события',
+    "Мини проект событий",
+    "Слайдер",
+    "Фильтр текста",
+    "Магазинный фильтр",
+    "Regex",
+    'Замыкание и Рекурсия',
+    "This, apply,call,bind, proto, prototype",
+    "class, constructor, cuper",
+    "работа с  Api (асинхронный код)",
+    'Полноценный проект (Пишем свой Google на js) часть 1',
+    'Полноценный проект (Пишем свой Google на js) часть 2',
+    'Полноценный проект (Пишем свой Google на js) часть 3',
+    "Работа над ошибками",
+    "Regex",
+    'Замыкание и Рекурсия',
+    "This, apply,call,bind, proto, prototype",
+    "class, constructor, cuper",
+    "работа с  Api (асинхронный код)",
+    "Знакомство с React (насройка окружения)",
+    "React компоненты и props",
+    "Первый хук, useState",
+    "useMemo",
+    "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
+    "useEffect и axios",
+    "HOC",
+    "useContext",
+    "Знакомство с разными библиотеками для React",
+    "Login (авторегистрация)",
+    "Взаимодействие разных аккаунтов вашей соц сети",
+    "Отправка локальных фото в сеть (axios post,put...)",
+    "Создаем чат между пользователями часть 1",
+    "Создаем чат между пользователями часть 2",
+    "Создаем чат между пользователями часть 3",
+    "Работа над ошибками, (создание резюме для работы)",
+    "Работа над ошибками",
+    "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
+    "action for Redux", // функции для редакс
+    "react router dom, HOC, REST API", //Coin и запросы 
+    "Знакомство с разными библиотеками для React", //Coincurrent библиотека графика Chart.js
+    "Redux, axios, useEffect", // переписываем запросы для redux
+    "Login (авторегистрация)", // аторегистрация для редакс
+    "библиотека localforage для Redux", // делаем избраное для Coin
+    "Создаем чат между пользователями часть 1",
+    "Создаем чат между пользователями часть 2",
+    "Создаем чат между пользователями часть 3",
+    "Работа над ошибками, (создание резюме для работы)",
+    
+]
+
+const FullStack = [
+    "Базовая разметка и структура HTML-страницы",
+    "Все основные HTML теги",
+    "Знакомство с CSS и стилями для текста, единицы измерения",
+    "Свойства display (flex,block,inline-block)..",
+    "CSS-свойства (margin, padding, box-shadow)",
+    "Position (absolute, relative, static)..",
+    "Свойства grid",
+    "Адаптивная верстка, подключение шрифтов",
+    "Анимация (burger menu)",
+    "Продвинутая анимация",
+    'Параллакс анимация',
+    "Работа над ошибками",
+    'Знакомство с Javascript , тип данных',
+    "Свойства тегов HTML, основы Git",
+    "Первое событие, поверхностное знакомство с function",
+    'Оператор if else',
+    'Оператор switch',
+    'Тернарные  операторы',
+    'Работа с формой в Js',
+    'Цикл while (do while)',
+    'Цикл for (Вложеные циклы)',
+    'Declaration функции',
+    'Expression функции (Самовызывающаяся функция)',
+    "Основы массивов",
+    "Основные методы массивов",
+    'Методы массивов',
+    'Взаимодействие методов между собой',
+    'Основы объектов',
+    "Певый мини проект (Взаимодействие массивов и объектов)",
+    "LocalStorage и sessionStorage",
+    "События мышки",
+    "События клавиатуры",
+    'Тач события',
+    "Мини проект событий",
+    "Слайдер",
+    "Фильтр текста",
+    "Магазинный фильтр",
+    "Regex",
+    'Замыкание и Рекурсия',
+    "This, apply,call,bind, proto, prototype",
+    "class, constructor, cuper",
+    "работа с  Api (асинхронный код)",
+    'Полноценный проект (Пишем свой Google на js) часть 1',
+    'Полноценный проект (Пишем свой Google на js) часть 2',
+    'Полноценный проект (Пишем свой Google на js) часть 3',
+    "Работа над ошибками",
+    "Regex",
+    'Замыкание и Рекурсия',
+    "This, apply,call,bind, proto, prototype",
+    "class, constructor, cuper",
+    "работа с  Api (асинхронный код)",
+    "Знакомство с React (насройка окружения)",
+    "React компоненты и props",
+    "Первый хук, useState",
+    "useMemo",
+    "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
+    "useEffect и axios",
+    "HOC",
+    "useContext",
+    "Знакомство с разными библиотеками для React",
+    "Login (авторегистрация)",
+    "Взаимодействие разных аккаунтов вашей соц сети",
+    "Отправка локальных фото в сеть (axios post,put...)",
+    "Создаем чат между пользователями часть 1",
+    "Создаем чат между пользователями часть 2",
+    "Создаем чат между пользователями часть 3",
+    "Работа над ошибками, (создание резюме для работы)",
+    "Работа над ошибками",
+    "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
+    "action for Redux", // функции для редакс
+    "react router dom, HOC, REST API", //Coin и запросы 
+    "Знакомство с разными библиотеками для React", //Coincurrent библиотека графика Chart.js
+    "Redux, axios, useEffect", // переписываем запросы для redux
+    "Login (авторегистрация)", // аторегистрация для редакс
+    "библиотека localforage для Redux", // делаем избраное для Coin
+    "Создаем чат между пользователями часть 1",
+    "Создаем чат между пользователями часть 2",
+    "Создаем чат между пользователями часть 3",
+    "Работа над ошибками, (создание резюме для работы)",
+    "Работа над ошибками",
+    "Основы NodeJS",
+    "Node.js core",
+    "События. EventEmitter",
+    "Модули. NPM",
+    "Работа с файлами. Потоки и асинхронность",
+    "TCP, HTTP и HTTPS серверы",
+    "Web сокеты и модуль ws. Socket.io",
+    "Асинхронный поток. Модуль Async",
+    "Node.js и Mongo.db",
+    "Шаблонизаторы. Mustache, Jade, EJS",
+    "Веб-каркас для Node.js",
+    "Тестирование кода на Node.js",
+    "Работа над ошибками, (создание резюме для работы)"
+    
+]
+
+const Redux = [
+    "Вспоминаем основы React (Git)",  //пишем todolist
+    "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
+    "action for Redux", // функции для редакс
+    "react router dom, HOC, REST API", //Coin и запросы 
+    "Знакомство с разными библиотеками для React", //Coincurrent библиотека графика Chart.js
+    "Redux, axios, useEffect", // переписываем запросы для redux
+    "Login (авторегистрация)", // аторегистрация для редакс
+    "библиотека localforage для Redux", // делаем избраное для Coin
+    "Создаем чат между пользователями часть 1",
+    "Создаем чат между пользователями часть 2",
+    "Создаем чат между пользователями часть 3",
+    "Работа над ошибками, (создание резюме для работы)",
+    // Кр сделать компоненту настройки
+]
+
+const ReactRedux = [
+    "Вспоминаем основы js (Git)",
+    "Regex",
+    'Замыкание и Рекурсия',
+    "This, apply,call,bind, proto, prototype",
+    "class, constructor, cuper",
+    "работа с  Api (асинхронный код)",
+    "Знакомство с React (насройка окружения)",
+    "React компоненты и props",
+    "Первый хук, useState",
+    "useMemo",
+    "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
+    "useEffect и axios",
+    "HOC",
+    "useContext",
+    "Знакомство с разными библиотеками для React",
+    "Login (авторегистрация)",
+    "Взаимодействие разных аккаунтов вашей соц сети",
+    "Отправка локальных фото в сеть (axios post,put...)",
+    "Создаем чат между пользователями часть 1",
+    "Создаем чат между пользователями часть 2",
+    "Создаем чат между пользователями часть 3",
+    "Работа над ошибками, (создание резюме для работы)",
+    "Работа над ошибками",
+    "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
+    "action for Redux", // функции для редакс
+    "react router dom, HOC, REST API", //Coin и запросы 
+    "Знакомство с разными библиотеками для React", //Coincurrent библиотека графика Chart.js
+    "Redux, axios, useEffect", // переписываем запросы для redux
+    "Login (авторегистрация)", // аторегистрация для редакс
+    "библиотека localforage для Redux", // делаем избраное для Coin
+    "Создаем чат между пользователями часть 1",
+    "Создаем чат между пользователями часть 2",
+    "Создаем чат между пользователями часть 3",
+    "Работа над ошибками, (создание резюме для работы)",
+
+]
+const python = [
+    "Основы python",
+    "Переменные, выражения и инструкции Python",
+    "Управление потоком выполнения",
+    "Итерации",
+    "Функции и модули",
+    "Строки",
+    "Основы работы с системой контроля версий",
+    "Файлы",
+    "Коллекции",
+    "Элементы функционального программирования",
+    "Функции",
+    "Объектно-ориентированный подход",
+    "Управление созданием экземпляров класса",
+    "Приемы объектно-ориентированного программирования",
+    "Модули и пакеты",
+    "Работа с файлами",
+    "Встроенные пакеты Python",
+    "Networking",
+    "Многопоточность в Python",
+    "Процессы в Python",
+    "Асинхронное программирование",
+    "Работа с СУБД SQLite, PostgreSQL",
+    "Object Relational Mapping",
+    "NoSQL-базы данных",
+    "Веб-разработка",
+    "Работа над ошибками, (создание резюме для работы)",
+  
+]
+const java = [
+    'Общая характеристика языка Java',
+    "Типы данных и основные операции с ними",
+    "Поток управления",
+    "Массивы",
+    "Строки",
+    "GIT. Контроль версии",
+    "Введение в объектно-ориентированное программирование",
+    "Отношения между объектами",
+    "Наследование и полиморфизм",
+    "Класс Object",
+    "Внутренние классы",
+    "Перечисление",
+    "Работа с базами данных",
+    "Обработка ошибок и исключения",
+    "Система ввода-вывода",
+    "Desktop-приложения",
+    "Классы коллекций",
+    "Знакомство с XML",
+    "Многопоточность",
+    "Классы BigInteger и BigDecimal",
+    "Универсальные типы",
+    "Утилитные пакеты",
+    "Java 8. Анонимные функции. Stream API",
+    "Автоматизация составления Java-проектов", //POTOM cr
+    "Java annotations",
+    "Java reflection",
+    "Advanced generics",
+    "Advanced collections",
+    "Advanced multithreading / concurrency",
+    "Advanced OOP",
+    "Design patterns",
+    "JRE security, JVM internals",
+    "Desktop-приложения: технология JavaFX",
+    "Spring",
+    "Работа с XML и JSON",
+    "Введение в SQL",
+    "JDBC",
+    "Знакомство с Lombok и Log4J",
+    "Работа над ошибками, (создание резюме для работы)",
+]
+
+const NodeJS = [
+    "Основы NodeJS",
+    "Node.js core",
+    "События. EventEmitter",
+    "Модули. NPM",
+    "Работа с файлами. Потоки и асинхронность",
+    "TCP, HTTP и HTTPS серверы",
+    "Web сокеты и модуль ws. Socket.io",
+    "Асинхронный поток. Модуль Async",
+    "Node.js и Mongo.db",
+    "Шаблонизаторы. Mustache, Jade, EJS",
+    "Веб-каркас для Node.js",
+    "Тестирование кода на Node.js",
+    "Работа над ошибками, (создание резюме для работы)"
+]
 const list_Our_Courses = [{
         page : 'HTMLcss.html',
         id: id(),
-        title: "HTML и CSS для JavaScript разработчиков",
+        title: "HTML и CSS для JavaScript",
         text: "Планируете изучать JavaScript? Вам необходимо знание HTML и CSS, поскольку большая часть технологий JavaScript это манипуляции со страницей! Курс изучает современную верстку и позволяет быстро научится создавать сайты. В курсе рассмотрены все основные технологии HTML5 и CSS3",
         img: "./assest/img/course/Html_Css2.jpg",
         start: "5.01.2021",
@@ -20,12 +451,13 @@ const list_Our_Courses = [{
             $_max: 125,
         },
         duration: {
-            number_of_lessons: 10,
-            hours: 30,
+            number_of_lessons: HTML_CSS.length,
+            hours: HTML_CSS.length*2,
             months: 1,
             quanity_per_week: 3,
             duration_one_lesson : 2
         },
+        plan: HTML_CSS
     },
     {
         page : 'FrontEnd.html',
@@ -45,12 +477,13 @@ const list_Our_Courses = [{
 
         },
         duration: {
-            number_of_lessons: 30,
-            hours: 75,
+            number_of_lessons: FrontEnd.length,
+            hours: FrontEnd.length*2,
             months: 3.5,
             quanity_per_week:3,
             duration_one_lesson : 2
         },
+        plan: FrontEnd
     },
     {
         page : 'Js.html',
@@ -69,12 +502,13 @@ const list_Our_Courses = [{
             $_max: 285,
         },
         duration: {
-            number_of_lessons: 12,
-            hours: 24,
+            number_of_lessons: JS.length,
+            hours: JS.length*2,
             months: 1,
             quanity_per_week: 2,
             duration_one_lesson : 2
         },
+        plan: JS
     },
     // //!
     // {
@@ -118,11 +552,12 @@ const list_Our_Courses = [{
             $_max: 355,
         },
         duration: {
-            number_of_lessons: 15,
-            hours: 45,
+            number_of_lessons: ReactRedux.length,
+            hours: ReactRedux.length*2,
             months: 2,
             quanity_per_week: 2,
         },
+        plan: ReactRedux
     },
     {
         page : 'Python.html',   
@@ -140,11 +575,12 @@ const list_Our_Courses = [{
             $_max: 500,
         },
         duration: {
-            number_of_lessons: 16,
-            hours: 50,
+            number_of_lessons: python.length,
+            hours: python.length*2,
             months: 2,
             quanity_per_week: 2,
         },
+        plan: python
     },
     {
         page : 'Java.html',  
@@ -162,11 +598,12 @@ const list_Our_Courses = [{
             $_max: 500,
         },
         duration: {
-            number_of_lessons: 16,
-            hours: 50,
+            number_of_lessons: java.length,
+            hours: java.length*2,
             months: 2,
             quanity_per_week: 2,
         },
+        plan: java
     },
     // {
     //     id: id(),
@@ -205,11 +642,12 @@ const list_Our_Courses = [{
             $_max: 635,
         },
         duration: {
-            number_of_lessons: 30,
-            hours: 90,
+            number_of_lessons: NodeJS.length,
+            hours: NodeJS.length*2,
             months: 4,
             quanity_per_week: 1,
         },
+        plan: NodeJS
     },
     //////////////!
     {
@@ -228,11 +666,12 @@ const list_Our_Courses = [{
             $_max: 635,
         },
         duration: {
-            number_of_lessons: 30,
-            hours: 90,
+            number_of_lessons: Redux.length,
+            hours: Redux.length*2,
             months: 4,
             quanity_per_week: 1,
         },
+        plan: Redux
     },
     {
         page : 'FullStack.html', 
@@ -250,11 +689,12 @@ const list_Our_Courses = [{
             $_max: 635,
         },
         duration: {
-            number_of_lessons: 30,
-            hours: 90,
+            number_of_lessons: FullStack.length,
+            hours: FullStack.length*2,
             months: 4,
             quanity_per_week: 1,
         },
+        plan: FullStack
     },
     {
         page : 'CSS.html', 
@@ -274,11 +714,12 @@ const list_Our_Courses = [{
             $_max: 635,
         },
         duration: {
-            number_of_lessons: 30,
-            hours: 90,
+            number_of_lessons: CSS_simple.length,
+            hours: CSS_simple.length*2,
             months: 4,
             quanity_per_week: 1,
         },
+        plan: CSS_simple
     },
     {
         page : 'React.html', 
@@ -296,11 +737,12 @@ const list_Our_Courses = [{
             $_max: 635,
         },
         duration: {
-            number_of_lessons: 30,
-            hours: 90,
+            number_of_lessons: React.length,
+            hours: React.length*2,
             months: 4,
             quanity_per_week: 1,
         },
+        plan: React
     },
     {
         page : 'CSSanimation.html', 
@@ -318,10 +760,11 @@ const list_Our_Courses = [{
             $_max: 635,
         },
         duration: {
-            number_of_lessons: 30,
-            hours: 90,
+            number_of_lessons: CSSAdvanced.length,
+            hours: CSSAdvanced.length*2,
             months: 4,
             quanity_per_week: 1,
         },
+        plan: CSSAdvanced
     },
 ];

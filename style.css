@@ -98,6 +98,7 @@ Version: 1.0
 
 .navbar-nav {
     position: relative;
+    overflow-y: hidden;
 }
 
 .submenu {
@@ -109,7 +110,9 @@ Version: 1.0
 /*--------------------------------
     2. FEATURES AREA
 ---------------------------------*/
-
+.col-md-4.col-lg-4.col-sm-6.col-xs-12{
+    padding: 0;
+}
 .row.promo-content {
     background: #ffffff none repeat scroll 0 0;
     -webkit-box-shadow: 0 9px 9px 0 #c7c7c7;
@@ -737,6 +740,23 @@ body::-webkit-scrollbar-thumb{
     position: fixed !important;
     z-index: 999999;
 } */
+.row.no-margin{
+    display: flex;
+    justify-content: center;
+}
+.no-padding.col-sm-20.col-md-10.col-md-offset-2.col-lg-8 {
+    /* display: flex;
+    justify-content: center;
+    background-color: #171932; */
+    margin: 0;
+}
+@media only screen and (max-width: 1000px) {
+    .row.promo-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 @media only screen and (max-width: 767px) {
    
     ul#nav {

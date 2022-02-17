@@ -1,5 +1,5 @@
 const AddCurs = ()=>{
-
+// console.log('f');
   const d =  document.querySelector('.course-list')
   if(!d) return
     d.innerHTML =  list_Our_Courses
@@ -7,7 +7,7 @@ const AddCurs = ()=>{
     <div id='courseElem' class="course-item">
     <div class="single-course mb20">
     <div class="contImgCours">
-    <img src="${elem.img}" alt="" class="item-picture">
+    <img src="${elem.img}" alt="лого" class="item-picture">
     </div>
     <div class="course-details">
     <h3 class="font30 item-title">${elem.title}</h3>
@@ -16,6 +16,10 @@ const AddCurs = ()=>{
     </div>
     </div>`).join('')
 }
+
+{/* <p class="mt30" id="Frontend"><a class="enroll-button" href="#contact">Записаться на курс</a> <span class="course-price"> <span class=" course-price course-price-sale">$625</span>$425</span>
+</p> */}
+AddCurs()
         // <a class="item-more font20" value='7' src="./curs/${elem.page}">Подробнее</a>
         // <a class="enroll-button" href="#contact">Записаться на курс</a>
 

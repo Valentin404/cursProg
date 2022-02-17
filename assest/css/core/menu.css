@@ -312,7 +312,7 @@ ul#nav li ul a,
     ul#nav {
         width: 100%;
         max-height: 200px;
-        overflow: scroll;
+       
         overflow-x: hidden;
     }
     ul#nav li {
