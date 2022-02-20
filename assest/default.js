@@ -45,9 +45,14 @@ document.querySelector('.submenu').innerHTML = list_Our_Courses
 
 
 const navLi = document.querySelectorAll('#nav li')
-
-navLi.forEach(li => {
+const defURL = '/cursProg/'
+if(window.location.pathname.length < 14 ){
+  navLi[0].classList.add('active')
+} else {
+  navLi.forEach(li => {
   if( li.childNodes[0].href.includes(window.location.pathname)) {
     li.classList.add('active')
   }
 })
+}
+
