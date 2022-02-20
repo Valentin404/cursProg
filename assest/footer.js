@@ -70,7 +70,7 @@ header.innerHTML =`
 
                         </ul>
                     </li>
-                    <li><a href="./Reviews.html">Обучение</a></li>
+                    <li><a href="./study.html">Обучение</a></li>
                     <li><a href="./Question.html">Вопросы</a></li>
                     <li><a href="./Contact.html">Контакты</a></li>
                 </ul>
