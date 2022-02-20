@@ -102,7 +102,7 @@ Version: 1.0
 }
 
 .submenu {
-    position: absolute;
+    position: fixed !important;
     top: -100px;
 }
 
@@ -806,4 +806,13 @@ html {
   .form-control{
     resize: none;
     height: 35px;
+  }
+
+  .web {
+      color: #0be27a;
+      /* color: goldenrod; */
+      transition: all .3s;
+  }
+  .navbar-brand:hover .web {
+      color: white;
   }

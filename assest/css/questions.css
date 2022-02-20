@@ -1,0 +1,178 @@
+.globC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 40px; */
+}
+
+.contAll {
+    margin: 40px 0;
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 30px ;
+    /* display: flex; */
+    /* justify-content: space-between; */
+
+}
+/*
+
+.contLogo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px
+   
+}
+
+.logoWeb {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    width: 365px;
+    margin-top: -25px;
+    right: -150px;
+    padding: 5px 20px;
+    transform: rotate(90deg);
+
+
+
+}
+
+.logoWeb:hover {
+    color: #0be27a;
+    transition: all .5s;
+}
+
+.logoWeb:hover span {
+    transition: all .5s;
+    color: white;
+}
+
+.contText {
+    width: calc(100% - 100px);
+}
+
+.logo img {
+    min-width: 160px;
+    margin: 0 30px;
+}
+
+.contAll.Left {
+    text-align: right;
+    align-items: center;
+}
+
+.contAll.Left .contText {
+    width: calc(100% - 250px);
+}
+
+
+
+@media screen and (max-width: 840px) {
+ 
+    .contAll {
+        flex-direction: column;
+    }
+    
+    .contLogo {
+        width: auto;
+    }
+    
+    .logoWeb {
+        transform: none;
+        position: static;
+        margin: 20px 0;
+    }
+    
+    .contText {
+        width: 100%;
+    }
+    
+    .contText p {
+        text-align: center;
+    }
+    
+ 
+    .contAll.Left {
+        justify-content: center;
+    }
+    
+    .contAll.Left .contText {
+        width: 100%;
+    }
+    
+    .contAll.Left .LogoImg {
+        position: absolute;
+        left: 0;
+    }
+}
+@media screen and (max-width: 375px) {
+    .contAll {
+        padding: 0 12px;
+    }
+    .contLogo h2 {
+        font-size: 21px
+    }
+    .logoWeb {
+        padding: 5px 10px;
+        width: auto;
+    }
+} */
+
+.contH2 {
+    box-shadow: 1px 7px 12px rgba(0, 0, 0, 0.548);
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    /* background-color: azure; */
+}
+.contH2 h2{
+    margin: 0;
+}
+.contPlus {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.contPlus span {
+    width: 100%;
+    position: absolute;
+    
+    height: 2px;
+    background-color: #0be27a;
+    transition: all .3s;
+    
+    
+}
+.contPlus span:nth-child(1){
+    transform: rotate(45deg);
+}
+.contPlus span:nth-child(2){
+    transform: rotate(-45deg);
+    
+}
+.contPlus.active span{
+    background-color: #333;
+    
+}
+.active span:nth-child(1) {
+    transform: rotate(405deg);
+}
+.active span:nth-child(2) {
+    transform: rotate(315deg);
+}
+.textP {
+    display: none;
+}
+.active .textP {
+    display: block;
+}
