@@ -52,22 +52,16 @@ menu.addEventListener("click", (el) => {
 	// console.log(el.target);
 	if (el.target.tagName === "A") { 
 
-		el.preventDefault();   // Отключает привычные  действия елементов
-
-		// el.target.setAttribute("href", "google");  // дописывает новый хреф, но что бі добавить, нужно preventDefault(); отключить их
-
-		// console.log(el.target.href);
-// От сюда
-		let list = el.target.closest("li"); //возвращает ближайший родительский элемент (или сам элемент)
-		let activeItem = document.getElementsByClassName("active")[0]; // если такой класс существует, то возвращает этот елемент
-
+		el.preventDefault();   
+		let list = el.target.closest("li");
+		let activeItem = document.getElementsByClassName("active")[0]; 
 		if (activeItem) {
-			activeItem.classList.remove("active");  // У (прошлого) елемента удаляет этот класс 
+			activeItem.classList.remove("active"); 
 		}
 		
-		list.classList.add("active"); // Добавляет этот класс
+		list.classList.add("active"); 
 	}
-	// до сюда
+	
 });
 
 //TASK 2
@@ -76,12 +70,8 @@ const ul = document.getElementById("messages");
 
 ul.addEventListener("click", function (e) {
 	if (e.target.closest("button").classList.contains("close-btn")) {
-		// e.target.closest(".pane").style.display = "none";
-		// console.log(e.target.closest("button")); // возвращает саму кнопку
-		// console.log(e.target.classList.contains("close-btn")); // Возвращает тру, если класс совпал
-		// console.log(e.target.closest("button").classList.contains("close-btn"));  // возвращает тру, если у кнопки (возвращаемого елемента) есть класс "close-btn" 
-		// так как сверху не пишут, если такого класса нет, возвращает ошибку
-		e.target.closest(".pane").remove();  // Удаляет елемент  таким класом
+
+		e.target.closest(".pane").remove(); 
 	}
 });
 

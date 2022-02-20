@@ -12,7 +12,7 @@ const AddCurs = () => {
     <div class="course-details">
     <h3 class="font30 item-title">${elem.title}</h3>
     </div>
-    <p class="mt30" id="Backend"><a href="./${elem.page}" class="enroll-button">Подробнее</a> <span class="course-price">${elem.price.uan_max} грн</span></p>
+    <p class="mt30" id="Backend"><a href="./${elem.page}" class="enroll-button">Подробнее</a> <span class="course-price">${elem.price[langPrice]} ${val}</span></p>
     </div>
     </div>`).join('')
 }
@@ -45,13 +45,7 @@ document.querySelector('.submenu').innerHTML = list_Our_Courses
 
 
 const navLi = document.querySelectorAll('#nav li')
-const arrURL = [
-  'AllCurs',
-  "index",
-  "Reviews",
-  "Question",
-  "Contact"
-]
+
 navLi.forEach(li => {
   if( li.childNodes[0].href.includes(window.location.pathname)) {
     li.classList.add('active')

@@ -7,15 +7,6 @@ const C = list_Our_Courses.find(d => d.page === name)
 
 // 3500 advanced
 //
-let val = 'грн'
-let advanced = 3500
-let margin = 250
-switch(langPrice){
-    case 'rub_max' : 
-    val = 'руб'
-    advanced = 9600
-    margin = 700
-}
 
 
 const painAllInfo = () => {
@@ -43,6 +34,7 @@ const painAllInfo = () => {
         <p>
        ${C.text}
     </p>
+    <h2 class="Start">Начало курса <span>${C.start}</span> </h2>
 </div>
 <div class="GlobPriceAll">
     <h2>Запись на курс</h2>

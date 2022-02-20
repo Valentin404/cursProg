@@ -317,3 +317,10 @@ text-align: center;
     }
 
 }
+
+.Start {
+margin: 10px 0;
+}
+.Start span {
+    color: #3ee792;
+}

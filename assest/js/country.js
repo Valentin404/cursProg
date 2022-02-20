@@ -16,3 +16,12 @@ let langPrice = 'uan_one'
 if(localStorage.getItem('country')){
 langPrice = 'rub_max'
 }
+let val = 'грн'
+let advanced = 3500
+let margin = 250
+switch(langPrice){
+    case 'rub_max' : 
+    val = 'руб'
+    advanced = 9600
+    margin = 700
+}
