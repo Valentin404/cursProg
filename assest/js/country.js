@@ -10,7 +10,7 @@ if(langURL.includes('ru')){
 
 // console.log(langURL);
 
-let langPrice = 'uan_one'
+let langPrice = 'uan_max'
 
 
 if(localStorage.getItem('country')){
