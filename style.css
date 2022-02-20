@@ -203,9 +203,6 @@ Version: 1.0
     flex: 1 1 auto;
 }
 
-.item-picture {}
-
-.item-title {}
 
 .item-label {
     display: flex;
@@ -750,6 +747,13 @@ body::-webkit-scrollbar-thumb{
     background-color: #171932; */
     margin: 0;
 }
+@media only screen and (max-width: 901px) {
+    .submenu {
+        position: relative !important;
+        /* top: -100px; */
+    }
+    
+}
 @media only screen and (max-width: 1000px) {
     .row.promo-content {
         display: flex;
@@ -797,7 +801,7 @@ body::-webkit-scrollbar-thumb{
 
 @media screen and (max-width: 400px) {
     .navbar-brand {
-        font-size: 13px;
+        font-size: 4.9vw;
     }
 }
 html {
@@ -813,6 +817,10 @@ html {
       /* color: goldenrod; */
       transition: all .3s;
   }
-  .navbar-brand:hover .web {
+  a:hover .web {
       color: white;
+  }
+
+  #nav {
+      overflow: hidden !important;
   }

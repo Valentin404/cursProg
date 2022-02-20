@@ -25,7 +25,7 @@
     <!--====== MAIN STYLESHEETS ======-->
     <link href="style.css" rel="stylesheet">
     <link href="assest/css/responsive.css" rel="stylesheet">
-
+    <script src="./assest/js/country.js"></script>
     <script src="assest/js/vendor/modernizr-2.8.3.min.js"></script>
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -48,102 +48,27 @@
 
     <!--START TOP AREA-->
     <header class="top-area" id="home">
-        <div class="header-top-area" id="scroolup">
-            <!--MAINMENU AREA-->
-            <div class="mainmenu-area" id="mainmenu-area">
-                <div class="mainmenu-area-bg"></div>
-                <nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <a href="./index.html" class="navbar-brand">GOOD WEB ACADEMY</a>
-                        </div>
-                        <div id="main-nav" class="stellarnav">
-                            <ul id="nav" class="nav navbar-nav pull-right">
-                                <li class=""><a href="./index.html">Главная</a></li>
-                                <li><a href="./AboutUs.html">О нас</a></li>
-                                <li><a href="./AllCurs.html">Курсы</a>
-                                    <ul class="submenu">
-
-                                    </ul>
-                                </li>
-                                <li><a href="./Reviews.html">Отзывы</a></li>
-                                <li><a href="./Question.html">Вопросы</a></li>
-                                <li><a href="./Contact.html">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <!--END MAINMENU AREA END-->
-        </div>
-
-        <!--WELCOME SLIDER AREA-->
-          <div class="welcome-slider-area white font16">
-            <div class="welcome-single-slide">
-                <div class="slide-bg-one slide-bg-overlay"></div>
-                <div class="welcome-area">
-                    <div class="container">
-                        <div class="row flex-v-center">
-                            <div class="col-md-8 col-lg-7 col-sm-12 col-xs-12">
-                                <div class="welcome-text">
-                                    <h1>Онлайн курс программирования с нуля</h1>
-                                    <p>Мы поможем вам получить полноценные знания и навыки программирования с нуля до Junior разработчика
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="welcome-single-slide">
-                <div class="slide-bg-two slide-bg-overlay"></div>
-                <div class="welcome-area">
-                    <div class="container">
-                        <div class="row flex-v-center">
-                            <div class="col-md-8 col-lg-7 col-sm-12 col-xs-12">
-                                <div class="welcome-text">
-                                    <h1>Онлайн курс программирования с нуля</h1>
-                                    <p>Мы поможем устроиться на первую работу и покажем как взять первый заказ на фриланс бирже и пополнить ваше портфолио</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="welcome-single-slide">
-                <div class="slide-bg-three slide-bg-overlay"></div>
-                <div class="welcome-area">
-                    <div class="container">
-                        <div class="row flex-v-center">
-                            <div class="col-md-8 col-lg-7 col-sm-12 col-xs-12">
-                                <div class="welcome-text">
-                                    <h1>Онлайн курс программирования с нуля</h1>
-                                   <p>Мы даем только те знания, которые нужны для для работы, а также предоставляем полную поддержку до первой работы</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
         <!--WELCOME SLIDER AREA END-->
     </header>
-   
 
- 
+
+<!-- 
     <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
                     <div class="text-center wow fadeIn">
                         <h2 class="xs-font20">GOOD WEB доверяют более 1000 студентов.</h2>
-                        <p>За время существования академии наши курсы прошли более 1000 студентов по всему миру. Наши выпускники добиваются реальных успехов в IT сфере, чего мы желаем и вам. Мы помогаем лучшим выпускникам успешно начать карьеру в IT-сфере</p>
+                        <p>За время существования академии наши курсы прошли более 1000 студентов по всему миру. Наши
+                            выпускники добиваются реальных успехов в IT сфере, чего мы желаем и вам. Мы помогаем лучшим
+                            выпускникам успешно начать карьеру в IT-сфере</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> -->
+
     <section class="contact-area sky-gray-bg" id="contact">
         <div class="container-fluid no-padding ">
             <div class="row no-margin ">
@@ -158,28 +83,33 @@
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                                         <div class="form-group" id="name-field">
                                             <div class="form-input">
-                                                <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Имя.." required>
+                                                <input type="text" class="form-control" id="form-name" name="form-name"
+                                                    placeholder="Имя.." required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                                         <div class="form-group" id="email-field">
                                             <div class="form-input">
-                                                <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email.." required>
+                                                <input type="email" class="form-control" id="form-email"
+                                                    name="form-email" placeholder="Email.." required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                         <div class="form-group" id="phone-field">
                                             <div class="form-input">
-                                                <input type="text" class="form-control" id="form-phone" name="form-phone" placeholder="Телефон...">
+                                                <input type="text" class="form-control" id="form-phone"
+                                                    name="form-phone" placeholder="Телефон...">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                         <div class="form-group" id="message-field">
                                             <div class="form-input">
-                                                <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="Название курса" required></textarea>
+                                                <textarea class="form-control" rows="6" id="form-message"
+                                                    name="form-message" placeholder="Название курса"
+                                                    required></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -196,9 +126,13 @@
             </div>
         </div>
     </section>
-   
+<section>
+    <div class="contContact">
+
+    </div>
+</section>
     <footer class="footer-area sky-gray-bg relative">
-      
+
     </footer>
     <!--FOOER AREA END-->
     <script src="./assest/footer.js"></script>
@@ -226,7 +160,7 @@
 
     <!--===== ACTIVE JS=====-->
     <script src="assest/js/main.js"></script>
-    
+
     <!-- <script src="./assest/default.js"></script> -->
 </body>
 

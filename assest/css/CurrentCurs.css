@@ -233,30 +233,11 @@ text-align: center;
     
     border-bottom:none;
 }
-/* .priceAll {
-    display: flex;
-    align-items: center;
-    margin: 14px 0;
 
-} */
-/* .priceText {
-    color: #2e2e43;
-    font-weight: 700;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    
-}
-.pricePr {
-    color: #2e2e43;
-    margin: 0 10px ;
-    transform: translate(0, 2px);
-    
-}
-.priceLast {
-    transform: translate(0, 2px);
-} */
 /* Zap */
+.contImgText {
+    max-width: 1020px;
+}
 .globContPlan {
     width: 100%;
     max-width: 1000px;

@@ -7,8 +7,19 @@ const C = list_Our_Courses.find(d => d.page === name)
 
 // 3500 advanced
 //
-const val = 'грн'
+let val = 'грн'
+let advanced = 3500
+let margin = 250
+switch(langPrice){
+    case 'rub_max' : 
+    val = 'руб'
+    advanced = 9600
+    margin = 700
+}
+
+
 const painAllInfo = () => {
+    const price = C.price[langPrice] 
     let lessons = "";
     C.plan.forEach((l,i)=>lessons+=` <div class="contPlan ${i%2 ? 'black':''}">
     <img class="PlaniconType" src="./assest/img/iconForCurs/github.png" alt="">
@@ -19,7 +30,7 @@ const painAllInfo = () => {
 
 <div class="containerTitle">    
  <div class="contImgText">
-    <p>
+ 
         <div class="contImg">
 
             <img class="cursImg" src="${C.img}" alt="">
@@ -29,6 +40,7 @@ const painAllInfo = () => {
         <h2>${C.title}
        
         </h2>
+        <p>
        ${C.text}
     </p>
 </div>
@@ -40,7 +52,7 @@ const painAllInfo = () => {
         <div class="allPrice">
             <div class="contPrice">
                 <h2>Стандарт</h2>
-                <h3 class="black">${C.price.uan_max} ${val}</h3>
+                <h3 class="black">${price} ${val}</h3>
             </div>
             <div class="priceInfo">
                 <p>Занятия в группе</p>
@@ -55,7 +67,7 @@ const painAllInfo = () => {
         <div class="allPrice">
             <div class="contPrice">
                 <h2>Advanced</h2>
-                <h3 class="black">${C.price.uan_max+3500} ${val}</h3>
+                <h3 class="black">${price+advanced} ${val}</h3>
             </div>
             <div class="priceInfo">
                 <p>Все из пакета Стандарт</p>
@@ -84,11 +96,11 @@ const painAllInfo = () => {
                 <h3>1 Платеж</h3>
                 <div class="piceType">
                     <p>Стандарт</p>
-                    <p>1 x ${C.price.uan_max} ${val}</p>
+                    <p>1 x ${price} ${val}</p>
                 </div>
                 <div class="piceType">
                     <p>Advanced</p>
-                    <p>1 x ${C.price.uan_max+3500} ${val}</p>
+                    <p>1 x ${price+advanced} ${val}</p>
                 </div>
             </div>
             <div class="lineH"></div>
@@ -97,11 +109,11 @@ const painAllInfo = () => {
                 <h3>2 Платежa</h3>
                 <div class="piceType">
                     <p>Стандарт</p>
-                    <p>2 x ${C.price.uan_max/2} ${val}</p>
+                    <p>2 x ${(price/2)+margin} ${val}</p>
                 </div>
                 <div class="piceType">
                     <p>Advanced</p>
-                    <p>2 x ${(C.price.uan_max+3500)/2} ${val}</p>
+                    <p>2 x ${((price+advanced)/2)+margin} ${val}</p>
                 </div>
             </div>
             <div class="lineH"></div>
@@ -110,11 +122,11 @@ const painAllInfo = () => {
                 <h3>4 Платежа</h3>
                 <div class="piceType">
                     <p>Стандарт</p>
-                    <p>4 x ${C.price.uan_max/4} ${val}</p>
+                    <p>4 x ${(price/4)+margin} ${val}</p>
                 </div>
                 <div class="piceType">
                     <p>Advanced</p>
-                    <p>4 x ${(C.price.uan_max+3500)/4} ${val}</p>
+                    <p>4 x ${((price+advanced)/4)+margin} ${val}</p>
                 </div>
             </div>
 
@@ -178,6 +190,7 @@ const painAllInfo = () => {
 
         <span class="PlanTime">${C.duration.hours} часа
             <span>${C.duration.number_of_lessons} уроков</span>
+            <span>${C.time} месяцев</span>
         </span>
     </div>
     <div class="globPlan">
