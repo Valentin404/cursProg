@@ -1,0 +1,156 @@
+.contTitleGlobal {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.aboutUs {
+    text-align: center;
+}
+.contTitle {
+    max-width: 1120px;
+    padding: 0 30px;
+}
+.row-why {
+    text-align: center;
+}
+/* grafic  */
+.contGraficGlob {
+    display: flex;
+    justify-content: center;
+}
+.contGrafic {
+    max-width: 1120px;
+    padding: 0 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* background-color: aqua; */
+    width: 100%;
+}
+.grafic {
+    position: relative;
+    margin-top: 45px;
+    border-bottom: 1px solid #2e2e43;
+    border-left: 1px solid #2e2e43;
+    margin-left: 40px;
+    height: 500px;
+    color: #2e2e43;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+.contPrice {
+    position: absolute;
+    left: -55px;
+    border-bottom: #2e2e43 solid 1px;
+    padding-right: 67px;
+    width: 55px;
+}
+.p1 {
+    top: 75%;
+}
+.p2 {
+    top: 50%;
+}
+.p3 {
+    top: 25%;
+}
+.p4 {
+    top: 0;
+}
+
+.contTime {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    bottom: -30px;
+    display: flex;
+    justify-content: space-between;
+}
+.coT {
+    border-left: #2e2e43 solid 1px;
+    padding-left: 5px;
+    padding-top: 22px;
+    /* transform: translate(0,-18px); */
+
+}
+
+.zpITCont {
+    background: rgba(46,193,206,.3);
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    height: 32%;
+    padding-right: 10%;
+}
+.zpITCont p{
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: #747b8c;
+    margin: 0;
+}
+.zpITCont h3 {
+    margin: 0;
+}
+
+
+.zpITCont.j2 {
+    left: 15%;
+    height: 50%;
+    width: 25%;
+}
+.zpITCont.j3 {
+    left: 30%;
+    width: 35%;
+    height: 72%;
+}
+.zpITCont.j4 {
+    left: 55%;
+    width: 35%;
+    height: 95%;
+}
+@media only screen and (max-width: 850px) { 
+    .grafic {
+        height: 70vh;
+    }
+    .zpITCont.j1 {
+        width: 24%;
+    }
+    .zpITCont.j2 {
+        width: 27%;
+        height: 54%;
+    }
+    .zpITCont h3 {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 546px) { 
+    .contGrafic {
+        padding: 0 13px;
+    }
+    .grafic {
+        margin-left: 0;
+        height: 80vh;
+    }
+    .contPrice {
+        display: none;
+    }
+    .zpITCont.j1 {
+        padding-left: 5px;
+    }
+    .zpITCont .time {
+      display: none;
+    }
+   
+}
+@media only screen and (max-width: 376px) { 
+    .zpITCont.j1 {
+        padding-left: 2px;
+    }
+    .zpITCont h3 {
+        font-size: 15px;
+    }
+
+}
