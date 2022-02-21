@@ -825,5 +825,10 @@ html {
       overflow: hidden !important;
   }
   .navbar {
-      z-index: 999999 !important;
+      /* z-index: 999999 !important;
+      top: 0; */
+      /* position: fixed; */
+  }
+  .scroolup {
+      position: fixed;
   }
