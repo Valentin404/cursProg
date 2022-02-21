@@ -824,3 +824,6 @@ html {
   #nav {
       overflow: hidden !important;
   }
+  .navbar {
+      z-index: 999999 !important;
+  }
