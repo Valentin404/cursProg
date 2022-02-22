@@ -1,15 +1,14 @@
 const curreentCurs = document.querySelector('.curreentCurs')
-const phatname = window.location.pathname
-const name = phatname.slice(10)
+const phatname = window.location.pathname.split('/')
+const name = phatname[phatname.length-1]
 const btnZap = document.getElementById('btnZap')
 
-const C = list_Our_Courses.find(d => d.page === name)
+const C = list_Our_Courses.find(d => d.page.includes(name))
 
 // 3500 advanced
-//
 
-
-const painAllInfo = () => {
+function painAllInfo () {
+   
     const price = C.price[langPrice] 
     let lessons = "";
     C.plan.forEach((l,i)=>lessons+=` <div class="contPlan ${i%2 ? 'black':''}">
@@ -203,4 +202,5 @@ const painAllInfo = () => {
 
 
 }
-painAllInfo()
+// painAllInfo()
+

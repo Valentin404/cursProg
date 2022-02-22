@@ -1,4 +1,4 @@
-const AddCurs = () => {
+function AddCurs ()  {
   // console.log('f');
   const d = document.querySelector('.course-list')
   if (!d) return
@@ -12,16 +12,18 @@ const AddCurs = () => {
     <div class="course-details">
     <h3 class="font30 item-title">${elem.title}</h3>
     </div>
-    <p class="mt30" id="Backend"><a href="./${elem.page}" class="enroll-button">Подробнее</a> <span class="course-price">${elem.price[langPrice]} ${val}</span></p>
+    <p class="mt30" id="Backend"><a href="./${elem.page}" class="enroll-button">Подробнее</a> <span class="course-price" title="${elem.id}">${elem.price[langPrice]} ${val}</span></p>
     </div>
     </div>`).join('')
 }
 
-{
-  /* <p class="mt30" id="Frontend"><a class="enroll-button" href="#contact">Записаться на курс</a> <span class="course-price"> <span class=" course-price course-price-sale">$625</span>$425</span>
-  </p> */
-}
+
+
+
 AddCurs()
+
+
+
 // <a class="item-more font20" value='7' src="./curs/${elem.page}">Подробнее</a>
 // <a class="enroll-button" href="#contact">Записаться на курс</a>
 
