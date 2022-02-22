@@ -768,6 +768,11 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media screen and (max-width: 600px) {
+    .contVideo iframe {
+        width: 80%;
+        height: 60%;
+        max-height: 300px;
+    }
     .navbar-brand {
         font-size: 24px;
     }
