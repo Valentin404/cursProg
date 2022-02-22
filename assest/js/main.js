@@ -1,4 +1,3 @@
-
 // Тут пиши описание курса
 function paintThecurrentCours(index) {
     window.scrollTo(pageYOffset, pageYOffset + 500)
@@ -22,24 +21,24 @@ function paintThecurrentCours(index) {
     </div>`;
 }
 
-const AllEventForIndex = ()=>{
-   const containre_courses =  document.getElementById("containre_courses")
-    if(containre_courses){
+const AllEventForIndex = () => {
+    const containre_courses = document.getElementById("containre_courses")
+    if (containre_courses) {
 
         containre_courses.addEventListener("click", (e) => {
             if (e.target.value + 1) {
                 paintThecurrentCours(+e.target.value);
             }
         });
-    
 
-    containre_courses.addEventListener("touchstart", (e) => {
-        if (e.target.value + 1) {
-            paintThecurrentCours(+e.target.value);
-        }
-    
-    });
-}
+
+        containre_courses.addEventListener("touchstart", (e) => {
+            if (e.target.value + 1) {
+                paintThecurrentCours(+e.target.value);
+            }
+
+        });
+    }
 }
 AllEventForIndex()
 
@@ -161,71 +160,73 @@ jQuery(document).on(
         // });
         const contVideo = document.querySelector('.contVideo')
         let isFirstStart = true;
-if(contVideo){
-          
-const video = document.querySelector('.video-area-popup')
-
-var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '390',
-    width: '640',
-    videoId: 'Dv7gLpW91DM',
-    playerVars: {
-      'playsinline': 1
-    },
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
-
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
-var done = false;
-function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    //   window.stopVideo = player.stopVideo
-    if(isFirstStart){ 
-        // setTimeout(window.stopVideo, 2000);
-        isFirstStart=false
-    }
-    done = true;
-  }
-}
+        const video = document.querySelector('.video-area-popup')
+        if (contVideo && video) {
 
 
-window.stopVideo = function stopVideo() {
-    player.stopVideo();
-    
-}
+            var tag = document.createElement('script');
 
-setTimeout(onYouTubeIframeAPIReady,2000)
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    height: '390',
+                    width: '640',
+                    videoId: 'Dv7gLpW91DM',
+                    playerVars: {
+                        'playsinline': 1
+                    },
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+
+            function onPlayerReady(event) {
+                event.target.playVideo();
+            }
+            var done = false;
+
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                    //   window.stopVideo = player.stopVideo
+                    if (isFirstStart) {
+                        // setTimeout(window.stopVideo, 2000);
+                        isFirstStart = false
+                    }
+                    done = true;
+                }
+            }
 
 
-video.onclick = ()=>{
-    contVideo.classList.add('active')
-}
-contVideo.onclick=e=>{
-   if(e.target.className.includes('contVideo')){
-    contVideo.classList.remove('active')  
-    window.stopVideo()
-   }
+            window.stopVideo = function stopVideo() {
+                player.stopVideo();
 
-}
+            }
 
-}
-          /*---------------------------
-                                                                                                                                                                                                                    MICHIMP INTEGRATION
-                                                                                                                                                                                                                -----------------------------*/
+            setTimeout(onYouTubeIframeAPIReady, 2000)
+
+
+            video.onclick = () => {
+                contVideo.classList.add('active')
+            }
+            contVideo.onclick = e => {
+                if (e.target.className.includes('contVideo')) {
+                    contVideo.classList.remove('active')
+                    window.stopVideo()
+                }
+
+            }
+
+        }
+        /*---------------------------
+                                                                                                                                                                                                                  MICHIMP INTEGRATION
+                                                                                                                                                                                                              -----------------------------*/
         $("#mc-form").ajaxChimp({
             url: "http://intimissibd.us14.list-manage.com/subscribe/post?u=a77a312486b6e42518623c58a&amp;id=4af1f9af4c", //Set Your Mailchamp URL
             callback: function (resp) {
@@ -382,4 +383,3 @@ jQuery(window).on("load", function () {
 //         document.getElementById("form-message").value = "";
 //     }
 // });
-

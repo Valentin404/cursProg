@@ -28,6 +28,10 @@
     <link rel="stylesheet" href="./assest/css/CurrentCurs.css">
     <script src="assest/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="./assest/js/country.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
 </head>
 
@@ -50,7 +54,7 @@
     </header>
 
     <section>
-<div class="curreentCurs"> </div>
+<div class="curreentCurs"></div>
 
     </section>
 
@@ -68,9 +72,13 @@
             </div>
         </div>
     </section>
-
     <section class="contact-area sky-gray-bg" id="contact">
-        <div class="container-fluid no-padding ">
+        <div class="contVideo">
+            <div class="container-fluid no-padding ">
+            <div class="contClose">
+                <span></span>
+                <span></span>
+            </div>
             <div class="row no-margin ">
                 <div class="no-padding col-sm-20 col-md-10 col-md-offset-2 col-lg-8">
                     <div class="contact-form-content padding50 xs-padding20">
@@ -125,8 +133,8 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
-
     <footer class="footer-area sky-gray-bg relative">
        
     </footer>
@@ -157,6 +165,8 @@
 
     <!--===== ACTIVE JS=====-->
     <script src="assest/js/main.js"></script>
+
+    <!-- <script src="./assest/default.js"></script> -->
 </body>
 
 </html>

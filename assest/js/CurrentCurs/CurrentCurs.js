@@ -33,8 +33,8 @@ function painAllInfo () {
         <p>
        ${C.text}
     </p>
+    </div>
     <h2 class="Start">Начало курса <span>${C.start}</span> </h2>
-</div>
 <div class="GlobPriceAll">
     <h2>Запись на курс</h2>
 
@@ -68,13 +68,6 @@ function painAllInfo () {
                 <p>помощь в трудоустройстве</p>
             </div>
         </div>
-        <!-- <div class="allPrice">
-    <div class="contPrice">
-        <h2>Стандарт</h2>
-        <h3 class="black">17 540 грн</h3>
-    </div>
-    
-</div> -->
     </div>
 
     <div class="contPriceParce">
@@ -127,10 +120,11 @@ function painAllInfo () {
     <div class="globZAp">
 
         <div class="contact-form">
-    <a href="#buttonSumbityy">
-    <button id="btnZap">Записаться на курс</button>
-    </a>
-        </div>
+
+    <button onclick="openZap()" id="btnZap">Записаться на курс</button>
+   
+    </div>
+
     </div>
 </div>
 
@@ -204,3 +198,21 @@ function painAllInfo () {
 }
 // painAllInfo()
 
+
+const contVideo = document.querySelector('.contVideo')
+function openZap(){
+    contVideo.classList.add('active')
+    window.scrollBy(0, -10000)
+    
+}
+
+const buttonSumbit = document.getElementById('buttonSumbit')
+
+buttonSumbit.addEventListener('click',e=>{
+    contVideo.classList.remove('active')
+    
+})
+document.querySelector('.contClose').addEventListener('click',()=>{
+    contVideo.classList.remove('active')
+
+})
