@@ -1,0 +1,30 @@
+.globalCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contAll {
+    max-width: 1200px;
+    width: 100%;
+}
+.mapsText {
+    font-size: 16px;
+    padding: 0;
+    /* cursor: pointer; */
+    width: 50%;
+    padding: 15px;
+
+
+    background-color: aqua;
+}
+.contMaps {
+    display: flex;
+    justify-content: space-between;
+}
+.cotMap {
+height: 400px;  
+width: 50%;  
+}
+#map {
+    height: 100%;
+}

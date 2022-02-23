@@ -200,9 +200,11 @@ function painAllInfo () {
 
 
 const contVideo = document.querySelector('.contVideo')
+
 function openZap(){
     contVideo.classList.add('active')
     window.scrollBy(0, -10000)
+    document.getElementById('form-message').value = C.title
     
 }
 
