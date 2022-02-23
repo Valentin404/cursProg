@@ -8,5 +8,5 @@ DG.then(function () {
         zoom: 13
     });
 
-    DG.marker([50.429785, 30.414668]).addTo(map).bindPopup(' <a class="navbar-brand mapsText">GOOD <span class="web">WEB</span>  ACADEMY</a>');
+    DG.marker([50.429785, 30.414668]).addTo(map).bindPopup(' <a class="navbar-brand mapsTextOpen">GOOD <span class="web">WEB</span>  ACADEMY</a>');
 });

@@ -22,7 +22,11 @@
 #map {
     height: 100%;
 }
-
+.mapsTextOpen {
+    margin: 0;
+    font-size: 24px;
+    padding: 0;
+}
 .mapsText {
     margin: 10px;
     font-size: 16px;
