@@ -352,7 +352,16 @@
     }
 
 }
-
+.contPayCript {
+text-align: center;
+    /* display: flex; */
+}
+.contLogoCript {
+    
+}
+.contLogoCript img {
+    width: 35px;
+}
 .Start {
     margin: 10px 0;
     text-align: center;
