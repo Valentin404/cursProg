@@ -1,0 +1,40 @@
+.contForStudyGlob {
+display: flex;
+justify-content: center;
+margin-top: 37px;
+}
+.contForStudyCont {
+
+    max-width: 1400px;
+    padding: 0 15px;
+}
+
+.contListImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgCSS {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-width: 400px;
+    max-height: 300px;
+    background-color: aquamarine;
+}
+.imgCSS img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(120%,0);
+}
+.imgCSS img.opac {
+    transform: translate(0,0);
+    z-index: 4;
+    opacity: 1;
+}

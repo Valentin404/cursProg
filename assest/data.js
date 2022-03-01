@@ -1,8 +1,6 @@
 let newId = 222;
 
-function id() {
-    return newId++;
-}
+const id = () => newId++;
 // сюда можно добаить больше инфы
 
 

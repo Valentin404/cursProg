@@ -10,7 +10,7 @@ footer.innerHTML = `
 <div class="footer-logo mb30">
 <a href="#">GOOD <span class="web">WEB</span> ACADEMY</a>
 </div>
-<p>Онлайн-курсы от GOOD WEB Academy — это путь от основ программирования на JavaScript до работы с популярными и востребованными инструментами, включая React и Redux</p>
+<p>Онлайн-курсы от GOOD WEB ACADEMY — это путь от основ программирования до работы с популярными и востребованными инструментами.</p>
 <p>+38 (093) 810 82 39 <span>(Основной)</span></p>
 <p>+38 (093) 810 82 39 <span>(Запасной)</span></p>
 <p>goodwebacademy@gmail.com</p>
