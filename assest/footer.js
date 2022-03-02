@@ -13,7 +13,7 @@ footer.innerHTML = `
 <p>Онлайн-курсы от GOOD WEB ACADEMY — это путь от основ программирования до работы с популярными и востребованными инструментами.</p>
 <p>+38 (093) 810 82 39 <span>(Основной)</span></p>
 <p>+38 (093) 810 82 39 <span>(Запасной)</span></p>
-<p>goodwebacademy@gmail.com</p>
+<p>GOOD.WEB.ACADEMY.USA@gmail.com</p>
 </div>
             </div>
             <div class="col-md-5 col-lg-5 col-sm-8 col-xs-12">

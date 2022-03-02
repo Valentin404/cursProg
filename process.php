@@ -1,7 +1,7 @@
 <?php
 // Configure your Subject Prefix and Recipient here
 $subjectPrefix = '[Contact Form Website]';
-$emailTo       = '<goodwebacademy@gmail.com>';
+$emailTo       = '<GOOD.WEB.ACADEMY.USA@gmail.com>';
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
 if($_SERVER['REQUEST_METHOD'] === 'POST') {

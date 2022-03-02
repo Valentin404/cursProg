@@ -1,7 +1,11 @@
+body {
+    overflow-x: hidden;
+}
 .contForStudyGlob {
 display: flex;
 justify-content: center;
 margin-top: 37px;
+text-align: center;
 }
 .contForStudyCont {
 
@@ -10,19 +14,41 @@ margin-top: 37px;
 }
 
 .contListImg {
+    text-align: start;
+    /* border: 2px solid #2e2e43; */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+
+}
+.contIm {
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    /* background-color: blueviolet; */
+}
+.contListImg img {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.contIm:hover img {
+opacity: 1;
 }
 .imgCSS {
-    position: relative;
+    /* position: relative;
     width: 100%;
     height: 100vh;
     max-width: 400px;
-    max-height: 300px;
-    background-color: aquamarine;
+    max-height: 300px; */
+    /* background-color: aquamarine; */
 }
 .imgCSS img {
+    /* display: none; */
+}
+/* .imgCSS img {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,4 +63,80 @@ margin-top: 37px;
     transform: translate(0,0);
     z-index: 4;
     opacity: 1;
+} */
+
+
+
+.contDifferent {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.contChoice {
+
+    width: 50%;
+}
+.contChoice.active h4 {
+background-color: #0be27a;
+}
+
+.contChoice h4 { 
+    background-color: #171932;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    transition: all .4s;
+    
+}
+
+.contChoice h4::after{
+    transition: all .4s;
+    border: 12px solid transparent;
+    position: absolute;
+    bottom: -24px;
+}
+.contChoice.active h4::after{
+    border-top-color:#0be27a ;
+    content: ' ';
+}
+.contentCurs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+margin-bottom: 50px;
+    /* background-color: aquamarine; */
+}
+.contentCurs {
+    display: none;
+}
+.contentCurs.active {
+    display: flex;
+}
+.contPlan {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+.contentCurs img {
+    width: 100%;
+    max-width: 560px;
+}
+.lineH {
+    height: 130px;
+    background-color: #1719327a;
+    width: 1px;
+    
+}
+.currentPlan {
+    /* box-shadow: 0px 0px 6px black; */
+    padding: 10px;
+    flex: 0 30%;
+    min-width: 220px;
+
 }

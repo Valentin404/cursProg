@@ -1,0 +1,13 @@
+.contCertifGlob {
+    display: flex;
+    justify-content: center;
+}
+.contCertif {
+    margin: 35px 0;
+    max-width: 1400px;
+    padding: 0 15px;
+}
+.contCertif h2 {
+    text-align: center;
+}
+
