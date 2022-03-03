@@ -15,19 +15,49 @@ text-align: center;
 
 .contListImg {
     text-align: start;
-    /* border: 2px solid #2e2e43; */
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 2px solid #2e2e43; */
+    /* flex-direction: column;
+    position: relative; */
 
 }
-.contIm {
+.contSoon {
+    margin: 35px 0;
+}
+.contSoon h2 {
+    margin: 10px 0 30px 0;
+}
+.contImgSoon {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 5px;
+    /* background-color: rgb(49, 90, 126); */
+}
+.contImgSoon img {
+    margin-bottom: 15px;
+    width: 100px;
+    height: 70px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.contImgSoon img:hover {
+    box-shadow: 0px 0px 3px black;
+}
+.contCertif img {
+    width: 100%;
+    max-width: 1000px;
+}
+/* .contIm {
     margin: 5px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 18px; */
     /* background-color: blueviolet; */
-}
-.contListImg img {
+/* } */
+/* .contListImg img {
     opacity: 0;
     position: absolute;
     height: 100%;
@@ -36,18 +66,18 @@ text-align: center;
 }
 .contIm:hover img {
 opacity: 1;
-}
-.imgCSS {
+} */
+/* .imgCSS { */
     /* position: relative;
     width: 100%;
     height: 100vh;
     max-width: 400px;
     max-height: 300px; */
     /* background-color: aquamarine; */
-}
-.imgCSS img {
+/* } */
+/* .imgCSS img { */
     /* display: none; */
-}
+/* } */
 /* .imgCSS img {
     position: absolute;
     top: 0;
@@ -70,7 +100,6 @@ opacity: 1;
 .contDifferent {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 .contChoice {
 
@@ -104,18 +133,19 @@ background-color: #0be27a;
 }
 .contentCurs {
     width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 margin-bottom: 50px;
     /* background-color: aquamarine; */
-}
-.contentCurs {
     display: none;
 }
+
 .contentCurs.active {
     display: flex;
+}
+.contentCurs p {
+    text-align: center;
 }
 .contPlan {
 display: flex;
@@ -139,4 +169,5 @@ justify-content: space-between;
     flex: 0 30%;
     min-width: 220px;
 
+    
 }
