@@ -22,7 +22,7 @@
 // if(localStorage.getItem('country')){
 // langPrice = 'rub_max'
 // }
-
+let C = 'rus'
 let langPrice = 'rub_max'
 let val = 'руб'
 let advanced = 9800
@@ -35,6 +35,7 @@ const changeLang = countr => {
             advanced = 3500
             margin = 250
             langPrice = 'uan_max'
+            C = 'uk'
     }
 }
 
