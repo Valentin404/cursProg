@@ -3,15 +3,15 @@ const phatname = window.location.pathname.split('/')
 const name = phatname[phatname.length-1]
 const btnZap = document.getElementById('btnZap')
 
-const C = list_Our_Courses.find(d => d.page.includes(name))
+const CurC = list_Our_Courses.find(d => d.page.includes(name))
 
 // 3500 advanced
 
 function painAllInfo () {
    
-    const price = C.price[langPrice] 
+    const price = CurC.price[langPrice] 
     let lessons = "";
-    C.plan.forEach((l,i)=>lessons+=` <div class="contPlan ${i%2 ? 'black':''}">
+    CurC.plan.forEach((l,i)=>lessons+=` <div class="contPlan ${i%2 ? 'black':''}">
     <img class="PlaniconType" src="./assest/img/iconForCurs/github.png" alt="">
     <span class="planSpan">${i+1}</span>
     <p>${l}</p>
@@ -23,18 +23,18 @@ function painAllInfo () {
  
         <div class="contImg">
 
-            <img class="cursImg" src="${C.img}" alt="">
+            <img class="cursImg" src="${CurC.img}" alt="">
            
          
         </div>
-        <h2>${C.title}
+        <h2>${CurC.title}
        
         </h2>
         <p>
-       ${C.text}
+       ${CurC.text}
     </p>
     </div>
-    <h2 class="Start">Начало курса <span>${C.start}</span> </h2>
+    <h2 class="Start">Начало курса <span>${CurC.start}</span> </h2>
 <div class="GlobPriceAll">
     <h2>Запись на курс</h2>
 
@@ -180,9 +180,9 @@ function painAllInfo () {
     <div class="planTitel">
         <h2>План обучения</h2>
 
-        <span class="PlanTime">${C.duration.hours} часа
-            <span>${C.duration.number_of_lessons} уроков</span>
-            <span>${C.time} месяцев</span>
+        <span class="PlanTime">${CurC.duration.hours} часа
+            <span>${CurC.duration.number_of_lessons} уроков</span>
+            <span>${CurC.time} месяцев</span>
         </span>
     </div>
     <div class="globPlan">
@@ -211,7 +211,7 @@ const contVideo = document.querySelector('.contVideo')
 function openZap(){
     contVideo.classList.add('active')
     window.scrollBy(0, -10000)
-    document.getElementById('form-message').value = C.title
+    document.getElementById('form-message').value = CurC.title
     
 }
 

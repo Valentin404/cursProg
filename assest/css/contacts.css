@@ -28,6 +28,10 @@
     padding: 0;
 }
 .mapsText {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
     margin: 10px;
     font-size: 16px;
     padding: 0;
@@ -42,7 +46,24 @@
 .mapsText h2 {
     margin-bottom: 12px;
 }
-
+.numContAll {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.numberCont {
+    margin-right:10px ;
+}
+.mapsText a img {
+    width: 30px;
+    margin: 5px 0;
+}
+/* .socCont {
+    display: flex;
+} */
+/* .socCont img {
+    width: 30px !important;
+} */
 .contactsCont {
 
 }
@@ -51,7 +72,11 @@
 }
 .contactsCont a  img{
     width: 30px;
-    margin: 8px 0;
+    /* margin: 8px 0; */
+}
+.numberH2 {
+    padding: 0;
+    margin: 0 !important;
 }
 @media only screen and (max-width: 799px) { 
 .mapsText {
@@ -62,5 +87,9 @@
 .cotMap {
 min-width: 0;
 width: 100%;
+}
+.numContAll {
+
+    justify-content: center;
 }
 }

@@ -4,22 +4,16 @@ $subjectPrefix = '[Contact Form Website]';
 $emailTo = '<good.web.academy.usa@gmail.com>';
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
-// $emailOb = array()
-// $emailOb['email'] = $email
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name    = stripslashes(trim($_POST['name']));
-    $email   = stripslashes(trim($_POST['email']));
+    $email   = 'valentine49717@gmail.com'
     $phone = stripslashes(trim($_POST['phone']));
     $message = stripslashes(trim($_POST['message']));
     if (empty($name)) {
         $errors['name'] = 'Name is required.';
     }
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       //  $errors['email'] = 'Email is invalid.';
-        // $emailOb['email'] = 'valentine49717@gmail.com'
-        $email = stripslashes(trim('valentine49717@gmail.com'));
-        
-
+        $errors['email'] = 'Email is invalid.';
     }
     if (empty($phone)) {
         $errors['phone'] = 'Phone is required.';
@@ -52,7 +46,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         mail($emailTo, "=?utf-8?B?" . base64_encode($subject) . "?=", $body, $headers);
         $data['success'] = true;
         $data['message'] = 'Congratulations. Your message has been sent successfully';
-
     }
     // return all our data to an AJAX call
     echo json_encode($data);

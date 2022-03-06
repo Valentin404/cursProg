@@ -1,6 +1,6 @@
-let newId = 222;
+let newIds = 222;
 
-const id = () => newId++;
+const id = () => newIds++;
 // сюда можно добаить больше инфы
 
 

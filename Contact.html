@@ -68,7 +68,7 @@
                             <h3 class="font28 mb50 xs-mb30 xs-font22 xs-mt20">Заполните форму и мы свяжемся с вами</h3>
                         </div>
                         <div class="contact-form wow fadeIn">
-                            <form action="process.php" id="contact-form" method="post">
+                            <form action="process.php" id="contact-form" method="post" novalidate>
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                                         <div class="form-group" id="name-field">
@@ -89,7 +89,7 @@
                                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                         <div class="form-group" id="phone-field">
                                             <div class="form-input">
-                                                <input type="text" class="form-control" id="form-phone"
+                                                <input type="tel" class="form-control" id="form-phone"
                                                     name="form-phone" placeholder="Телефон...">
                                             </div>
                                         </div>
@@ -139,24 +139,27 @@
                     </div>
                     <div class="mapsText">
                         <h2>Наш  адрес</h2>
-                        <p class="numberCont">Vaclav Havel Boulevard, 28, Київ, 03126</p>
+                        <p class="contactsCont">Vaclav Havel Boulevard, 28, Київ, 03126</p>
                         <a class="GoogleMap" href="https://goo.gl/maps/dv3JoUmzMGPLcjvW6">Посмотреть в Google maps</a>
                         
-                        <!-- <h2>Социальные сети</h2>
-                        <div class="socCont">
+                        <!-- <h2>Социальные сети</h2>-->
+                         <!-- <div class="socCont">
                             <a class="currentCot" href="https://web.telegram.org/z/#-1161966307">
-                                <span>Telegram</span> <img src="./assest/img/socLogo/telegram_app_48px.png" alt="">
+                                <span>Telegram</span> 
+                                <img src="./assest/img/socLogo/telegram_app_48px.png" alt="">
                             </a>
                             <div class="currentCot">
-                                <span>WhatsApp</span> <img src="./assest/img/socLogo/whatsapp_48px.png" alt="">
+                                <span>WhatsApp</span> 
+                                <img src="./assest/img/socLogo/whatsapp_48px.png" alt="">
                             </div>
                             <div class="currentCot">
-                                <span>Viber</span> <img src="./assest/img/socLogo/viber_48px.png" alt="">
+                                <span>Viber</span>
+                                 <img src="./assest/img/socLogo/viber_48px.png" alt="">
                             </div>
-                        </div> -->
-                        <h2>Номер</h2>
-                       <div class="contactsCont">
-                        <p>+38 (093) 810 82 39</p>
+                        </div>  -->
+                        <h2 class="numberH2">Номер</h2>
+                       <div class="numContAll">
+                        <p class="numberCont">+38 (093) 810 82 39</p>
                         <a href="viber://chat?number=%2B380938108239">
                             <img src="./assest/img/socLogo/viber_48px.png" alt="">
                         </a>

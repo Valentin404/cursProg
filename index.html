@@ -414,33 +414,38 @@
                             <h3 class="font28 mb50 xs-mb30 xs-font22 xs-mt20">Заполните форму и мы свяжемся с вами</h3>
                         </div>
                         <div class="contact-form wow fadeIn">
-                            <form action="process.php" id="contact-form" method="post">
+                            <form action="process.php" id="contact-form" method="post" novalidate>
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                                         <div class="form-group" id="name-field">
                                             <div class="form-input">
-                                                <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Имя.." required>
+                                                <input type="text" class="form-control" id="form-name" name="form-name"
+                                                    placeholder="Имя.." required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                                         <div class="form-group" id="email-field">
                                             <div class="form-input">
-                                                <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email.." required>
+                                                <input type="email" class="form-control" id="form-email"
+                                                    name="form-email" placeholder="Email.." required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                         <div class="form-group" id="phone-field">
                                             <div class="form-input">
-                                                <input type="text" class="form-control" id="form-phone" name="form-phone" placeholder="Телефон...">
+                                                <input type="tel" class="form-control" id="form-phone"
+                                                    name="form-phone" placeholder="Телефон...">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                         <div class="form-group" id="message-field">
                                             <div class="form-input">
-                                                <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="Название курса" required></textarea>
+                                                <textarea class="form-control" rows="6" id="form-message"
+                                                    name="form-message" placeholder="Название курса"
+                                                    required></textarea>
                                             </div>
                                         </div>
                                     </div>
