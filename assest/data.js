@@ -3,432 +3,1546 @@ let newIds = 222;
 const id = () => newIds++;
 // сюда можно добаить больше инфы
 
-
-
 const HTML_CSS = [
-    "Настройка окружения, основы Git",
-    "Базовая разметка и структура HTML-страницы",
-    "Все основные HTML теги",
-    "Знакомство с CSS и стилями для текста, единицы измерения",
-    "Свойства display (flex,block,inline-block)..",
-    "CSS-свойства (margin, padding, box-shadow)",
-    "Position (absolute, relative, static)..",
-    "Свойства grid",
-    "Адаптивная верстка, подключение шрифтов",
-    "Анимация (burger menu)",
-    "Работа над ошибками",
-    "Анимация для(hover,focus,active)",
-    "Анимация (burger menu)",
-    "Продвинутая анимация",
-    "Анимация титров",
-    'Параллакс анимация',
-    "Работа над ошибками (создание резюме для работы)",
+    {
+        t: "Настройка окружения, основы Git",
+        icon: "github.png"
+    },
+    {
+        t: "Базовая разметка и структура HTML-страницы",
+        icon: "progr.png"
+    },
+    {
+        t: "Все основные HTML теги",
+        icon: "progr.png"
+    },
+    {
+        t:  "Знакомство с CSS и стилями для текста, единицы измерения",
+        icon: "css.png"
+    },
+    {
+        t:  "Свойства display (flex,block,inline-block)..",
+        icon: "css.png"
+    },
+    {
+        t:  "CSS-свойства (margin, padding, box-shadow)",
+        icon: "css.png"
+    },
+    {
+        t:  "Position (absolute, relative, static)..",
+        icon: "css.png"
+    },
+    {
+        t:  "Свойства grid",
+        icon: "css.png"
+    },
+    {
+        t:  "Адаптивная верстка, подключение шрифтов",
+        icon: "css.png"
+    },
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    {
+        t:    "Анимация для(hover,focus,active)",
+        icon: "css.png"
+    },
+    {
+        t:   "Анимация (burger menu)",
+        icon: "css.png"
+    },
+    {
+        t:    "Продвинутая анимация",
+        icon: "css.png"
+    },
+    {
+        t:    "Анимация титров",
+        icon: "css.png"
+    },
+    {
+        t:    'Параллакс анимация',
+        icon: "css.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    },
 ]
-
 const CSSAdvanced = [
-    "Настройка окружения, основы Git, вспоминаем CSS",
-    "Анимация для(hover,focus,active)",
-    "Анимация (burger menu)",
-    "Продвинутая анимация",
-    "Анимация титров",
-    'Параллакс анимация',
-    "Работа над ошибками (создание резюме для работы)",
+    {
+        t: "Настройка окружения, основы Git, вспоминаем CSS",
+        icon: "github.png"
+    },
+    {
+        t:    "Анимация для(hover,focus,active)",
+        icon: "css.png"
+    },
+    {
+        t:   "Анимация (burger menu)",
+        icon: "css.png"
+    },
+    {
+        t:    "Продвинутая анимация",
+        icon: "css.png"
+    },
+    {
+        t:    "Анимация титров",
+        icon: "css.png"
+    },
+    {
+        t:    'Параллакс анимация',
+        icon: "css.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    },
 
 ]
+
 const CSS_simple = [
-    "Настройка окружения, основы Git",
-    "Знакомство с CSS и стилями для текста, единицы измерения",
-    "Свойства display (flex,block,inline-block)..",
-    "CSS-свойства (margin, padding, box-shadow)",
-    "Position (absolute, relative, static)..",
-    "Свойства grid",
-    "Адаптивная верстка, подключение шрифтов",
-    "Анимация (burger menu)",
-    "Работа над ошибками (создание резюме для работы)",
-    
+    {
+        t: "Настройка окружения, основы Git",
+        icon: "github.png"
+    },
+    {
+        t:  "Знакомство с CSS и стилями для текста, единицы измерения",
+        icon: "css.png"
+    },
+    {
+        t:  "Свойства display (flex,block,inline-block)..",
+        icon: "css.png"
+    },
+    {
+        t:  "CSS-свойства (margin, padding, box-shadow)",
+        icon: "css.png"
+    },
+    {
+        t:  "Position (absolute, relative, static)..",
+        icon: "css.png"
+    },
+    {
+        t:  "Свойства grid",
+        icon: "css.png"
+    },
+    {
+        t:  "Адаптивная верстка, подключение шрифтов",
+        icon: "css.png"
+    },
+    {
+        t:   "Анимация (burger menu)",
+        icon: "css.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    },
 ]
 
 const JS = [
-    'Знакомство с Javascript , тип данных',
-    "Свойства тегов HTML, основы Git",
-    "Первое событие, поверхностное знакомство с function",
-    'Оператор if else',
-    'Оператор switch',
-    'Тернарные  операторы',
-    'Работа с формой в Js',
-    'Цикл while (do while)',
-    'Цикл for (Вложеные циклы)',
-    'Declaration функции',
-    'Expression функции (Самовызывающаяся функция)',
-    "Основы массивов",
-    "Основные методы массивов",
-    'Методы массивов',
-    'Взаимодействие методов между собой',
-    'Основы объектов',
-    "Певый мини проект (Взаимодействие массивов и объектов)",
-    "LocalStorage и sessionStorage",
-    "События мышки",
-    "События клавиатуры",
-    'Тач события',
-    "Мини проект событий",
-    "Слайдер",
-    "Фильтр текста",
-    "Магазинный фильтр",
-    "Regex",
-    'Замыкание и Рекурсия',
-    "This, apply,call,bind, proto, prototype",
-    "class, constructor, cuper",
-    "работа с  Api (асинхронный код)",
-    'Полноценный проект (Пишем свой Google на js) часть 1',
-    'Полноценный проект (Пишем свой Google на js) часть 2',
-    'Полноценный проект (Пишем свой Google на js) часть 3',
-    "Работа над ошибками (создание резюме для работы)",
-    
-    
-    
+    {
+        t: "Свойства тегов HTML, основы Git",
+        icon: "github.png"
+    },
+    {
+        t: 'Знакомство с Javascript , тип данных',
+        icon: "js.png"
+    },
+    {
+        t: "Первое событие, поверхностное знакомство с function",
+        icon: "js.png"
+    },
+    {
+        t: 'Оператор if else',
+        icon: "js.png"
+    },
+    {
+        t: 'Оператор switch',
+        icon: "js.png"
+    },
+    {
+        t: 'Тернарные  операторы',
+        icon: "js.png"
+    },
+    {
+        t: 'Работа с формой в Js',
+        icon: "js.png"
+    },
+    {
+        t: 'Цикл while (do while)',
+        icon: "js.png"
+    },
+    {
+        t: 'Цикл for (Вложеные циклы)',
+        icon: "js.png"
+    },
+    {
+        t: 'Declaration функции',
+        icon: "js.png"
+    },
+    {
+        t: 'Expression функции (Самовызывающаяся функция)',
+        icon: "js.png"
+    },
+    {
+        t: "Основы массивов",
+        icon: "js.png"
+    },
+    {
+        t: "Основные методы массивов",
+        icon: "js.png"
+    },
+    {
+        t: 'Методы массивов',
+        icon: "js.png"
+    },
+    {
+        t: 'Взаимодействие методов между собой',
+        icon: "js.png"
+    },
+    {
+        t: 'Основы объектов',
+        icon: "js.png"
+    },
+    {
+        t: "Певый мини проект (Взаимодействие массивов и объектов)",
+        icon: "comp_1.png"
+    },
+    {
+        t: "LocalStorage и sessionStorage",
+        icon: "json.png"
+    },
+    {
+        t: "События мышки",
+        icon: "js.png"
+    },
+    {
+        t: "События клавиатуры",
+        icon: "js.png"
+    }, 
+    {
+        t: "Тач события",
+        icon: "js.png"
+    },
+    {
+        t:  "Мини проект событий 1",
+        icon: "comp.png"
+    },   
+    {
+        t:  "Мини проект событий 2",
+        icon: "comp.png"
+    },   
+    {
+        t:  "Слайдер",
+        icon: "js.png"
+    },   
+    {
+        t:  "Фильтр текста",
+        icon: "js.png"
+    },   
+    {
+        t:  "Магазинный фильтр",
+        icon: "js.png"
+    },   
+    {
+        t:  "Regex",
+        icon: "Rx.png"
+    },   
+    {
+        t:  'Замыкание и Рекурсия',
+        icon: "js.png"
+    },   
+    {
+        t:  "This, apply,call,bind, proto, prototype",
+        icon: "js.png"
+    },   
+    {
+        t:  "class, constructor, cuper",
+        icon: "js.png"
+    },   
+    {
+        t:  "работа с  Api (асинхронный код)",
+        icon: "api.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 1',
+        icon: "hacker.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 2',
+        icon: "hacker.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 3',
+        icon: "hacker.png"
+    },   
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    },
 ]
 const React = [
-    "Вспоминаем основы js (Git)",
-    "Regex",
-    'Замыкание и Рекурсия',
-    "This, apply,call,bind, proto, prototype",
-    "class, constructor, cuper",
-    "работа с  Api (асинхронный код)",
-    "Знакомство с React (насройка окружения)",
-    "React компоненты и props",
-    "Первый хук, useState",
-    "useMemo",
-    "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
-    "useEffect и axios",
-    "HOC",
-    "useContext",
-    "Знакомство с разными библиотеками для React",
-    "Login (авторегистрация)",
-    "Взаимодействие разных аккаунтов вашей соц сети",
-    "Отправка локальных фото в сеть (axios post,put...)",
-    "Создаем чат между пользователями часть 1",
-    "Создаем чат между пользователями часть 2",
-    "Создаем чат между пользователями часть 3",
-    "Работа над ошибками (создание резюме для работы)",
-//Кр сделать компоненту настройки
-
+    {
+        t: "Вспоминаем основы js (Git)",
+        icon: "github.png"
+    },
+    {
+        t:  "Regex",
+        icon: "Rx.png"
+    },   
+    {
+        t:  'Замыкание и Рекурсия',
+        icon: "js.png"
+    },   
+    {
+        t:  "This, apply,call,bind, proto, prototype",
+        icon: "js.png"
+    },   
+    {
+        t:  "class, constructor, cuper",
+        icon: "js.png"
+    },   
+    {
+        t:  "работа с  Api (асинхронный код)",
+        icon: "api.png"
+    },   
+    {
+        t:  "Знакомство с React (насройка окружения)",
+        icon: "react.png"
+    },   
+    {
+        t: "React компоненты и props",
+        icon: "react.png"
+    },   
+    {
+        t:  "Первый хук, useState",
+        icon: "hook.png"
+    },   
+    {
+        t:  "useMemo",
+        icon: "hook.png"
+    },   
+    {
+        t:  "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
+        icon: "router.png"
+    },   
+    {
+        t:  "useEffect и axios",
+        icon: "api.png"
+    },   
+    {
+        t:  "HOC",
+        icon: "fun.png"
+    },   
+    {
+        t:   "useContext",
+        icon: "fun.png"
+    },   
+    {
+        t:   "Знакомство с разными библиотеками для React",
+        icon: "library.png"
+    },   
+    {
+        t:   "Login (авторегистрация)",
+        icon: "react.png"
+    },   
+    {
+        t:    "Взаимодействие разных аккаунтов вашей соц сети",
+        icon: "react.png"
+    },   
+    {
+        t:"Отправка локальных фото в сеть (axios post,put...)",
+        icon: "api.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 1",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 2",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 3",
+        icon: "hacker.png"
+    },   
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    },
 ]
 
 const FrontEnd = [
-    "Базовая разметка и структура HTML-страницы",
-    "Все основные HTML теги",
-    "Знакомство с CSS и стилями для текста, единицы измерения",
-    "Свойства display (flex,block,inline-block)..",
-    "CSS-свойства (margin, padding, box-shadow)",
-    "Position (absolute, relative, static)..",
-    "Свойства grid",
-    "Адаптивная верстка, подключение шрифтов",
-    "Анимация (burger menu)",
-    "Продвинутая анимация",
-    'Параллакс анимация',
-    "Работа над ошибками",
-    'Знакомство с Javascript , тип данных',
-    "Свойства тегов HTML, основы Git",
-    "Первое событие, поверхностное знакомство с function",
-    'Оператор if else',
-    'Оператор switch',
-    'Тернарные  операторы',
-    'Работа с формой в Js',
-    'Цикл while (do while)',
-    'Цикл for (Вложеные циклы)',
-    'Declaration функции',
-    'Expression функции (Самовызывающаяся функция)',
-    "Основы массивов",
-    "Основные методы массивов",
-    'Методы массивов',
-    'Взаимодействие методов между собой',
-    'Основы объектов',
-    "Певый мини проект (Взаимодействие массивов и объектов)",
-    "LocalStorage и sessionStorage",
-    "События мышки",
-    "События клавиатуры",
-    'Тач события',
-    "Мини проект событий",
-    "Слайдер",
-    "Фильтр текста",
-    "Магазинный фильтр",
-    "Regex",
-    'Замыкание и Рекурсия',
-    "This, apply,call,bind, proto, prototype",
-    "class, constructor, cuper",
-    "работа с  Api (асинхронный код)",
-    'Полноценный проект (Пишем свой Google на js) часть 1',
-    'Полноценный проект (Пишем свой Google на js) часть 2',
-    'Полноценный проект (Пишем свой Google на js) часть 3',
-    "Работа над ошибками",
-    "Regex",
-    'Замыкание и Рекурсия',
-    "This, apply,call,bind, proto, prototype",
-    "class, constructor, cuper",
-    "работа с  Api (асинхронный код)",
-    "Знакомство с React (насройка окружения)",
-    "React компоненты и props",
-    "Первый хук, useState",
-    "useMemo",
-    "react router dom (Начинаем первый проект, пишем свою социальную сеть)",
-    "useEffect и axios",
-    "HOC",
-    "useContext",
-    "Знакомство с разными библиотеками для React",
-    "Login (авторегистрация)",
-    "Взаимодействие разных аккаунтов вашей соц сети",
-    "Отправка локальных фото в сеть (axios post,put...)",
-    "Создаем чат между пользователями часть 1",
-    "Создаем чат между пользователями часть 2",
-    "Создаем чат между пользователями часть 3",
-    "Работа над ошибками",
-    "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
-    "action for Redux", // функции для редакс
-    "react router dom, HOC, REST API", //Coin и запросы 
-    "Знакомство с разными библиотеками для React", //Coincurrent библиотека графика Chart.js
-    "Redux, axios, useEffect", // переписываем запросы для redux
-    "Login (авторегистрация)", // аторегистрация для редакс
-    "библиотека localforage для Redux", // делаем избраное для Coin
-    "Создаем чат между пользователями часть 1",
-    "Создаем чат между пользователями часть 2",
-    "Создаем чат между пользователями часть 3",
-    "Работа над ошибками (создание резюме для работы)",
-    
+    {
+        t: "Настройка окружения, основы Git",
+        icon: "github.png"
+    },
+    {
+        t: "Базовая разметка и структура HTML-страницы",
+        icon: "progr.png"
+    },
+    {
+        t: "Все основные HTML теги",
+        icon: "progr.png"
+    },
+    {
+        t:  "Знакомство с CSS и стилями для текста, единицы измерения",
+        icon: "css.png"
+    },
+    {
+        t:  "Свойства display (flex,block,inline-block)..",
+        icon: "css.png"
+    },
+    {
+        t:  "CSS-свойства (margin, padding, box-shadow)",
+        icon: "css.png"
+    },
+    {
+        t:  "Position (absolute, relative, static)..",
+        icon: "css.png"
+    },
+    {
+        t:  "Свойства grid",
+        icon: "css.png"
+    },
+    {
+        t:  "Адаптивная верстка, подключение шрифтов",
+        icon: "css.png"
+    },
+    {
+        t:    "Анимация для(hover,focus,active)",
+        icon: "css.png"
+    },
+    {
+        t:   "Анимация (burger menu)",
+        icon: "css.png"
+    },
+    {
+        t:    "Продвинутая анимация",
+        icon: "css.png"
+    },
+    {
+        t:    "Анимация титров",
+        icon: "css.png"
+    },
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    {
+        t: 'Знакомство с Javascript , тип данных',
+        icon: "js.png"
+    },
+    {
+        t: "Первое событие, поверхностное знакомство с function",
+        icon: "js.png"
+    },
+    {
+        t: 'Оператор if else',
+        icon: "js.png"
+    },
+    {
+        t: 'Оператор switch',
+        icon: "js.png"
+    },
+    {
+        t: 'Тернарные  операторы',
+        icon: "js.png"
+    },
+    {
+        t: 'Работа с формой в Js',
+        icon: "js.png"
+    },
+    {
+        t: 'Цикл while (do while)',
+        icon: "js.png"
+    },
+    {
+        t: 'Цикл for (Вложеные циклы)',
+        icon: "js.png"
+    },
+    {
+        t: 'Declaration функции',
+        icon: "js.png"
+    },
+    {
+        t: 'Expression функции (Самовызывающаяся функция)',
+        icon: "js.png"
+    },
+    {
+        t: "Основы массивов",
+        icon: "js.png"
+    },
+    {
+        t: "Основные методы массивов",
+        icon: "js.png"
+    },
+    {
+        t: 'Методы массивов',
+        icon: "js.png"
+    },
+    {
+        t: 'Взаимодействие методов между собой',
+        icon: "js.png"
+    },
+    {
+        t: 'Основы объектов',
+        icon: "js.png"
+    },
+    {
+        t: "Певый мини проект (Взаимодействие массивов и объектов)",
+        icon: "comp_1.png"
+    },
+    {
+        t: "LocalStorage и sessionStorage",
+        icon: "json.png"
+    },
+    {
+        t: "События мышки",
+        icon: "js.png"
+    },
+    {
+        t: "События клавиатуры",
+        icon: "js.png"
+    }, 
+    {
+        t: "Тач события",
+        icon: "js.png"
+    },
+    {
+        t:  "Мини проект событий 1",
+        icon: "comp.png"
+    },   
+    {
+        t:  "Мини проект событий 2",
+        icon: "comp.png"
+    },   
+    {
+        t:  "Слайдер",
+        icon: "js.png"
+    },   
+    {
+        t:  "Фильтр текста",
+        icon: "js.png"
+    },   
+    {
+        t:  "Магазинный фильтр",
+        icon: "js.png"
+    },   
+    {
+        t:  "Regex",
+        icon: "Rx.png"
+    },   
+    {
+        t:  'Замыкание и Рекурсия',
+        icon: "js.png"
+    },   
+    {
+        t:  "This, apply,call,bind, proto, prototype",
+        icon: "js.png"
+    },   
+    {
+        t:  "class, constructor, cuper",
+        icon: "js.png"
+    },   
+    {
+        t:  "работа с  Api (асинхронный код)",
+        icon: "api.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 1',
+        icon: "hacker.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 2',
+        icon: "hacker.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 3',
+        icon: "hacker.png"
+    },   
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    {
+        t:  "Regex",
+        icon: "Rx.png"
+    },   
+    {
+        t:  'Замыкание и Рекурсия',
+        icon: "js.png"
+    },   
+    {
+        t:  "This, apply,call,bind, proto, prototype",
+        icon: "js.png"
+    },   
+    {
+        t:  "class, constructor, cuper",
+        icon: "js.png"
+    }, 
+    {
+        t:  "Знакомство с React (насройка окружения)",
+        icon: "react.png"
+    },   
+    {
+        t: "React компоненты и props",
+        icon: "react.png"
+    },   
+    {
+        t:  "Первый хук, useState",
+        icon: "hook.png"
+    },   
+    {
+        t:  "useMemo",
+        icon: "hook.png"
+    },   
+    {
+        t:  "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
+        icon: "router.png"
+    },   
+    {
+        t:  "useEffect и axios",
+        icon: "api.png"
+    },   
+    {
+        t:  "HOC",
+        icon: "fun.png"
+    },   
+    {
+        t:   "useContext",
+        icon: "fun.png"
+    },     
+    {
+        t:   "Login (авторегистрация)",
+        icon: "react.png"
+    },   
+    {
+        t: "Взаимодействие разных аккаунтов вашей соц сети",
+        icon: "react.png"
+    },   
+    {
+        t:"Отправка локальных фото в сеть (axios post,put...)",
+        icon: "api.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 1",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 2",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 3",
+        icon: "hacker.png"
+    },   
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    {
+        t:     "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
+        icon: "redux.png"
+    },
+    {
+        t: "action for Redux", // функции для редакс
+        icon: "redux.png"
+    },
+    {
+        t:  "react router dom, HOC, REST API", //Coin и запросы 
+        icon: "api.png"
+    },
+    {
+        t:   "Знакомство с библиотекой Chart.js", //Coincurrent библиотека графика Chart.js
+        icon: "chart.png"
+    },
+    {
+        t:  "Redux, axios, useEffect", // переписываем запросы для redux
+        icon: "redux.png"
+    },
+    {
+        t:  "Login (авторегистрация)", // аторегистрация для редакс
+        icon: "redux.png"
+    },
+    {
+        t:  "библиотека localforage для Redux", // делаем избраное для Coin
+        icon: "redux.png"
+    },
+    {
+        t: "переписываем чат между пользователями для Redux",
+        icon: "redux.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    },
+    //Кр сделать компоненту настройки
 ]
 
 const FullStack = [
-    "Базовая разметка и структура HTML-страницы",
-    "Все основные HTML теги",
-    "Знакомство с CSS и стилями для текста, единицы измерения",
-    "Свойства display (flex,block,inline-block)..",
-    "CSS-свойства (margin, padding, box-shadow)",
-    "Position (absolute, relative, static)..",
-    "Свойства grid",
-    "Адаптивная верстка, подключение шрифтов",
-    "Анимация (burger menu)",
-    "Продвинутая анимация",
-    'Параллакс анимация',
-    "Работа над ошибками",
-    'Знакомство с Javascript , тип данных',
-    "Свойства тегов HTML, основы Git",
-    "Первое событие, поверхностное знакомство с function",
-    'Оператор if else',
-    'Оператор switch',
-    'Тернарные  операторы',
-    'Работа с формой в Js',
-    'Цикл while (do while)',
-    'Цикл for (Вложеные циклы)',
-    'Declaration функции',
-    'Expression функции (Самовызывающаяся функция)',
-    "Основы массивов",
-    "Основные методы массивов",
-    'Методы массивов',
-    'Взаимодействие методов между собой',
-    'Основы объектов',
-    "Певый мини проект (Взаимодействие массивов и объектов)",
-    "LocalStorage и sessionStorage",
-    "События мышки",
-    "События клавиатуры",
-    'Тач события',
-    "Мини проект событий",
-    "Слайдер",
-    "Фильтр текста",
-    "Магазинный фильтр",
-    "Regex",
-    'Замыкание и Рекурсия',
-    "This, apply,call,bind, proto, prototype",
-    "class, constructor, cuper",
-    "работа с  Api (асинхронный код)",
-    'Полноценный проект (Пишем свой Google на js) часть 1',
-    'Полноценный проект (Пишем свой Google на js) часть 2',
-    'Полноценный проект (Пишем свой Google на js) часть 3',
-    "Работа над ошибками",
-    "Regex",
-    'Замыкание и Рекурсия',
-    "This, apply,call,bind, proto, prototype",
-    "class, constructor, cuper",
-    "работа с  Api (асинхронный код)",
-    "Знакомство с React (насройка окружения)",
-    "React компоненты и props",
-    "Первый хук, useState",
-    "useMemo",
-    "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
-    "useEffect и axios",
-    "HOC",
-    "useContext",
-    "Знакомство с разными библиотеками для React",
-    "Login (авторегистрация)",
-    "Взаимодействие разных аккаунтов вашей соц сети",
-    "Отправка локальных фото в сеть (axios post,put...)",
-    "Создаем чат между пользователями часть 1",
-    "Создаем чат между пользователями часть 2",
-    "Создаем чат между пользователями часть 3",
-    "Работа над ошибками",
-    "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
-    "action for Redux", // функции для редакс
-    "react router dom, HOC, REST API", //Coin и запросы 
-    "Знакомство с разными библиотеками для React", //Coincurrent библиотека графика Chart.js
-    "Redux, axios, useEffect", // переписываем запросы для redux
-    "Login (авторегистрация)", // аторегистрация для редакс
-    "библиотека localforage для Redux", // делаем избраное для Coin
-    "Создаем чат между пользователями часть 1",
-    "Создаем чат между пользователями часть 2",
-    "Создаем чат между пользователями часть 3",
-    "Работа над ошибками",
-    "Основы NodeJS",
-    "Node.js core",
-    "События. EventEmitter",
-    "Модули. NPM",
-    "Работа с файлами. Потоки и асинхронность",
-    "TCP, HTTP и HTTPS серверы",
-    "Web сокеты и модуль ws. Socket.io",
-    "Асинхронный поток. Модуль Async",
-    "Node.js и Mongo.db",
-    "Шаблонизаторы. Mustache, Jade, EJS",
-    "Веб-каркас для Node.js",
-    "Тестирование кода на Node.js",
-    "Работа над ошибками (создание резюме для работы)"
-    
+    {
+        t: "Настройка окружения, основы Git",
+        icon: "github.png"
+    },
+    {
+        t: "Базовая разметка и структура HTML-страницы",
+        icon: "progr.png"
+    },
+    {
+        t: "Все основные HTML теги",
+        icon: "progr.png"
+    },
+    {
+        t:  "Знакомство с CSS и стилями для текста, единицы измерения",
+        icon: "css.png"
+    },
+    {
+        t:  "Свойства display (flex,block,inline-block)..",
+        icon: "css.png"
+    },
+    {
+        t:  "CSS-свойства (margin, padding, box-shadow)",
+        icon: "css.png"
+    },
+    {
+        t:  "Position (absolute, relative, static)..",
+        icon: "css.png"
+    },
+    {
+        t:  "Свойства grid",
+        icon: "css.png"
+    },
+    {
+        t:  "Адаптивная верстка, подключение шрифтов",
+        icon: "css.png"
+    },
+    {
+        t:    "Анимация для(hover,focus,active)",
+        icon: "css.png"
+    },
+    {
+        t:   "Анимация (burger menu)",
+        icon: "css.png"
+    },
+    {
+        t:    "Продвинутая анимация",
+        icon: "css.png"
+    },
+    {
+        t:    "Анимация титров",
+        icon: "css.png"
+    },
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    {
+        t: 'Знакомство с Javascript , тип данных',
+        icon: "js.png"
+    },
+    {
+        t: "Первое событие, поверхностное знакомство с function",
+        icon: "js.png"
+    },
+    {
+        t: 'Оператор if else',
+        icon: "js.png"
+    },
+    {
+        t: 'Оператор switch',
+        icon: "js.png"
+    },
+    {
+        t: 'Тернарные  операторы',
+        icon: "js.png"
+    },
+    {
+        t: 'Работа с формой в Js',
+        icon: "js.png"
+    },
+    {
+        t: 'Цикл while (do while)',
+        icon: "js.png"
+    },
+    {
+        t: 'Цикл for (Вложеные циклы)',
+        icon: "js.png"
+    },
+    {
+        t: 'Declaration функции',
+        icon: "js.png"
+    },
+    {
+        t: 'Expression функции (Самовызывающаяся функция)',
+        icon: "js.png"
+    },
+    {
+        t: "Основы массивов",
+        icon: "js.png"
+    },
+    {
+        t: "Основные методы массивов",
+        icon: "js.png"
+    },
+    {
+        t: 'Методы массивов',
+        icon: "js.png"
+    },
+    {
+        t: 'Взаимодействие методов между собой',
+        icon: "js.png"
+    },
+    {
+        t: 'Основы объектов',
+        icon: "js.png"
+    },
+    {
+        t: "Певый мини проект (Взаимодействие массивов и объектов)",
+        icon: "comp_1.png"
+    },
+    {
+        t: "LocalStorage и sessionStorage",
+        icon: "json.png"
+    },
+    {
+        t: "События мышки",
+        icon: "js.png"
+    },
+    {
+        t: "События клавиатуры",
+        icon: "js.png"
+    }, 
+    {
+        t: "Тач события",
+        icon: "js.png"
+    },
+    {
+        t:  "Мини проект событий 1",
+        icon: "comp.png"
+    },   
+    {
+        t:  "Мини проект событий 2",
+        icon: "comp.png"
+    },   
+    {
+        t:  "Слайдер",
+        icon: "js.png"
+    },   
+    {
+        t:  "Фильтр текста",
+        icon: "js.png"
+    },   
+    {
+        t:  "Магазинный фильтр",
+        icon: "js.png"
+    },   
+    {
+        t:  "Regex",
+        icon: "Rx.png"
+    },   
+    {
+        t:  'Замыкание и Рекурсия',
+        icon: "js.png"
+    },   
+    {
+        t:  "This, apply,call,bind, proto, prototype",
+        icon: "js.png"
+    },   
+    {
+        t:  "class, constructor, cuper",
+        icon: "js.png"
+    },   
+    {
+        t:  "работа с  Api (асинхронный код)",
+        icon: "api.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 1',
+        icon: "hacker.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 2',
+        icon: "hacker.png"
+    },   
+    {
+        t:  'Полноценный проект (Пишем свой Google на js) часть 3',
+        icon: "hacker.png"
+    },   
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    {
+        t:  "Regex",
+        icon: "Rx.png"
+    },   
+    {
+        t:  'Замыкание и Рекурсия',
+        icon: "js.png"
+    },   
+    {
+        t:  "This, apply,call,bind, proto, prototype",
+        icon: "js.png"
+    },   
+    {
+        t:  "class, constructor, cuper",
+        icon: "js.png"
+    }, 
+    {
+        t:  "Знакомство с React (насройка окружения)",
+        icon: "react.png"
+    },   
+    {
+        t: "React компоненты и props",
+        icon: "react.png"
+    },   
+    {
+        t:  "Первый хук, useState",
+        icon: "hook.png"
+    },   
+    {
+        t:  "useMemo",
+        icon: "hook.png"
+    },   
+    {
+        t:  "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
+        icon: "router.png"
+    },   
+    {
+        t:  "useEffect и axios",
+        icon: "api.png"
+    },   
+    {
+        t:  "HOC",
+        icon: "fun.png"
+    },   
+    {
+        t:   "useContext",
+        icon: "fun.png"
+    },     
+    {
+        t:   "Login (авторегистрация)",
+        icon: "react.png"
+    },   
+    {
+        t: "Взаимодействие разных аккаунтов вашей соц сети",
+        icon: "react.png"
+    },   
+    {
+        t:"Отправка локальных фото в сеть (axios post,put...)",
+        icon: "api.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 1",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 2",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 3",
+        icon: "hacker.png"
+    },   
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    {
+        t:     "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
+        icon: "redux.png"
+    },
+    {
+        t: "action for Redux", // функции для редакс
+        icon: "redux.png"
+    },
+    {
+        t:  "react router dom, HOC, REST API", //Coin и запросы 
+        icon: "api.png"
+    },
+    {
+        t:   "Знакомство с библиотекой Chart.js", //Coincurrent библиотека графика Chart.js
+        icon: "chart.png"
+    },
+    {
+        t:  "Redux, axios, useEffect", // переписываем запросы для redux
+        icon: "redux.png"
+    },
+    {
+        t:  "Login (авторегистрация)", // аторегистрация для редакс
+        icon: "redux.png"
+    },
+    {
+        t:  "библиотека localforage для Redux", // делаем избраное для Coin
+        icon: "redux.png"
+    },
+    {
+        t: "переписываем чат между пользователями для Redux",
+        icon: "redux.png"
+    },
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    //Кр сделать компоненту настройки
+    {
+        t: "Основы NodeJS",
+        icon: "node.png"
+    },
+    {
+        t:  "Node.js core",
+        icon: "node.png"
+    },
+    {
+        t:   "События. EventEmitter",
+        icon: "node.png"
+    },
+    {
+        t: "Модули. NPM",
+        icon: "node.png"
+    },
+    {
+        t: "Работа с файлами. Потоки и асинхронность",
+        icon: "api.png"
+    },
+    {
+        t: "TCP, HTTP и HTTPS серверы",
+        icon: "api.png"
+    },
+    {
+        t: "Web сокеты и модуль ws. Socket.io",
+        icon: "api.png"
+    },
+    {
+        t: "Асинхронный поток. Модуль Async",
+        icon: "api.png"
+    },
+    {
+        t: "Node.js и Mongo.db",
+        icon: "api.png"
+    },
+    {
+        t: "Шаблонизаторы. Mustache, Jade, EJS",
+        icon: "js.png"
+    },
+    {
+        t: "Веб-каркас для Node.js",
+        icon: "node.png"
+    },
+    {
+        t: "Тестирование кода на Node.js",
+        icon: "node.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    } 
 ]
 
 const Redux = [
-    "Вспоминаем основы React (Git)",  //пишем todolist
-    "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
-    "action for Redux", // функции для редакс
-    "react router dom, HOC, REST API", //Coin и запросы 
-    "Знакомство с разными библиотеками для React", //Coincurrent библиотека графика Chart.js
-    "Redux, axios, useEffect", // переписываем запросы для redux
-    "Login (авторегистрация)", // аторегистрация для редакс
-    "библиотека localforage для Redux", // делаем избраное для Coin
-    "Создаем чат между пользователями часть 1",
-    "Создаем чат между пользователями часть 2",
-    "Создаем чат между пользователями часть 3",
-    "Работа над ошибками (создание резюме для работы)",
+    {
+        t: "Вспоминаем основы js (Git)",//пишем todolist
+        icon: "github.png"
+    },  
+    {
+        t: "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
+        icon: "redux.png"
+    },
+    {
+        t: "action for Redux", // функции для редакс
+        icon: "redux.png"
+    },
+    {
+        t:  "react router dom, HOC, REST API", //Coin и запросы 
+        icon: "api.png"
+    },
+    {
+        t:   "Знакомство с библиотекой Chart.js", //Coincurrent библиотека графика Chart.js
+        icon: "chart.png"
+    },
+    {
+        t:  "Redux, axios, useEffect", // переписываем запросы для redux
+        icon: "redux.png"
+    },
+    {
+        t:  "Login (авторегистрация)", // аторегистрация для редакс
+        icon: "redux.png"
+    },
+    {
+        t:  "библиотека localforage для Redux", // делаем избраное для Coin
+        icon: "redux.png"
+    },
+    {
+        t: "переписываем чат между пользователями для Redux",
+        icon: "redux.png"
+    },
+
+    {
+        t:"Создаем чат между пользователями часть 1",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 2",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 3",
+        icon: "hacker.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    },
     // Кр сделать компоненту настройки
 ]
 
 const ReactRedux = [
-    "Вспоминаем основы js (Git)",
-    "Regex",
-    'Замыкание и Рекурсия',
-    "This, apply,call,bind, proto, prototype",
-    "class, constructor, cuper",
-    "работа с  Api (асинхронный код)",
-    "Знакомство с React (насройка окружения)",
-    "React компоненты и props",
-    "Первый хук, useState",
-    "useMemo",
-    "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
-    "useEffect и axios",
-    "HOC",
-    "useContext",
-    "Знакомство с разными библиотеками для React",
-    "Login (авторегистрация)",
-    "Взаимодействие разных аккаунтов вашей соц сети",
-    "Отправка локальных фото в сеть (axios post,put...)",
-    "Создаем чат между пользователями часть 1",
-    "Создаем чат между пользователями часть 2",
-    "Создаем чат между пользователями часть 3",
-    "Работа над ошибками (создание резюме для работы)",
-    "Работа над ошибками",
-    "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
-    "action for Redux", // функции для редакс
-    "react router dom, HOC, REST API", //Coin и запросы 
-    "Знакомство с разными библиотеками для React", //Coincurrent библиотека графика Chart.js
-    "Redux, axios, useEffect", // переписываем запросы для redux
-    "Login (авторегистрация)", // аторегистрация для редакс
-    "библиотека localforage для Redux", // делаем избраное для Coin
-    "Создаем чат между пользователями часть 1",
-    "Создаем чат между пользователями часть 2",
-    "Создаем чат между пользователями часть 3",
-    "Работа над ошибками (создание резюме для работы)",
-
+    {
+        t: "Вспоминаем основы js (Git)",//пишем todolist
+        icon: "github.png"
+    }, 
+    {
+        t:  "Regex",
+        icon: "Rx.png"
+    },   
+    {
+        t:  'Замыкание и Рекурсия',
+        icon: "js.png"
+    },   
+    {
+        t:  "This, apply,call,bind, proto, prototype",
+        icon: "js.png"
+    },   
+    {
+        t:  "class, constructor, cuper",
+        icon: "js.png"
+    }, 
+    {
+        t:  "Знакомство с React (насройка окружения)",
+        icon: "react.png"
+    },   
+    {
+        t: "React компоненты и props",
+        icon: "react.png"
+    },   
+    {
+        t:  "Первый хук, useState",
+        icon: "hook.png"
+    },   
+    {
+        t:  "useMemo",
+        icon: "hook.png"
+    },   
+    {
+        t:  "react router dom (Начинаем первый проект, пишем свою социальная сеть)",
+        icon: "router.png"
+    },   
+    {
+        t:  "useEffect и axios",
+        icon: "api.png"
+    },   
+    {
+        t:  "HOC",
+        icon: "fun.png"
+    },   
+    {
+        t:   "useContext",
+        icon: "fun.png"
+    },     
+    {
+        t:   "Login (авторегистрация)",
+        icon: "react.png"
+    },   
+    {
+        t: "Взаимодействие разных аккаунтов вашей соц сети",
+        icon: "react.png"
+    },   
+    {
+        t:"Отправка локальных фото в сеть (axios post,put...)",
+        icon: "api.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 1",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 2",
+        icon: "hacker.png"
+    },   
+    {
+        t:"Создаем чат между пользователями часть 3",
+        icon: "hacker.png"
+    },   
+    {
+        t:    "Работа над ошибками",
+        icon: "ditCode.png"
+    },
+    {
+        t:     "Знакомство с Redux (mapStateToProps)", //переписываем в редакс
+        icon: "redux.png"
+    },
+    {
+        t: "action for Redux", // функции для редакс
+        icon: "redux.png"
+    },
+    {
+        t:  "react router dom, HOC, REST API", //Coin и запросы 
+        icon: "api.png"
+    },
+    {
+        t:   "Знакомство с библиотекой Chart.js", //Coincurrent библиотека графика Chart.js
+        icon: "chart.png"
+    },
+    {
+        t:  "Redux, axios, useEffect", // переписываем запросы для redux
+        icon: "redux.png"
+    },
+    {
+        t:  "Login (авторегистрация)", // аторегистрация для редакс
+        icon: "redux.png"
+    },
+    {
+        t:  "библиотека localforage для Redux", // делаем избраное для Coin
+        icon: "redux.png"
+    },
+    {
+        t: "переписываем чат между пользователями для Redux",
+        icon: "redux.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    }
 ]
 const python = [
-    "Основы python",
-    "Переменные, выражения и инструкции Python",
-    "Управление потоком выполнения",
-    "Итерации",
-    "Функции и модули",
-    "Строки",
-    "Основы работы с системой контроля версий",
-    "Файлы",
-    "Коллекции",
-    "Элементы функционального программирования",
-    "Функции",
-    "Объектно-ориентированный подход",
-    "Управление созданием экземпляров класса",
-    "Приемы объектно-ориентированного программирования",
-    "Модули и пакеты",
-    "Работа с файлами",
-    "Встроенные пакеты Python",
-    "Networking",
-    "Многопоточность в Python",
-    "Процессы в Python",
-    "Асинхронное программирование",
-    "Работа с СУБД SQLite, PostgreSQL",
-    "Object Relational Mapping",
-    "NoSQL-базы данных",
-    "Веб-разработка",
-    "Работа над ошибками (создание резюме для работы)",
+    {
+        t: "Вспоминаем основы js (Git)",//пишем todolist
+        icon: "github.png"
+    },
+    {
+        t: "Основы python",
+        icon: "python.png"
+    },
+    {
+        t: "Переменные, выражения и инструкции Python",
+        icon: "python.png"
+    },
+    {
+        t: "Управление потоком выполнения",
+        icon: "python.png"
+    },
+    {
+        t: "Итерации",
+        icon: "python.png"
+    },
+    {
+        t: "Функции и модули",
+        icon: "python.png"
+    },
+    {
+        t: "Строки",
+        icon: "python.png"
+    },
+    {
+        t: "Основы работы с системой контроля версий",
+        icon: "python.png"
+    },
+    {
+        t: "Файлы",
+        icon: "file.png"
+    },
+    {
+        t: "Коллекции",
+        icon: "python.png"
+    },
+    {
+        t: "Элементы функционального программирования",
+        icon: "python.png"
+    },
+    {
+        t:  "Функции",
+        icon: "python.png"
+    },
+    {
+        t:  "Объектно-ориентированный подход",
+        icon: "python.png"
+    },
+    {
+        t:  "Управление созданием экземпляров класса",
+        icon: "python.png"
+    },
+    {
+        t:  "Приемы объектно-ориентированного программирования",
+        icon: "python.png"
+    },
+    {
+        t:   "Модули и пакеты",
+        icon: "python.png"
+    },
+    {
+        t:   "Работа с файлами",
+        icon: "file.png"
+    },
+    {
+        t:   "Встроенные пакеты Python",
+        icon: "python.png"
+    },
+    {
+        t:    "Networking",
+        icon: "python.png"
+    },
+    {
+        t:    "Многопоточность в Python",
+        icon: "python.png"
+    },
+    {
+        t:    "Процессы в Python",
+        icon: "python.png"
+    },
+    {
+        t:    "Асинхронное программирование",
+        icon: "api.png"
+    },
+    {
+        t:    "Работа с СУБД SQLite, PostgreSQL",
+        icon: "server.png"
+    },
+    {
+        t:    "Object Relational Mapping",
+        icon: "server.png"
+    },
+    {
+        t:    "NoSQL-базы данных",
+        icon: "mysql.png"
+    },
+    {
+        t:    "Веб-разработка",
+        icon: "web.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    }
   
 ]
 const java = [
-    'Общая характеристика языка Java',
-    "Типы данных и основные операции с ними",
-    "Поток управления",
-    "Массивы",
-    "Строки",
-    "GIT. Контроль версии",
-    "Введение в объектно-ориентированное программирование",
-    "Отношения между объектами",
-    "Наследование и полиморфизм",
-    "Класс Object",
-    "Внутренние классы",
-    "Перечисление",
-    "Работа с базами данных",
-    "Обработка ошибок и исключения",
-    "Система ввода-вывода",
-    "Desktop-приложения",
-    "Классы коллекций",
-    "Знакомство с XML",
-    "Многопоточность",
-    "Классы BigInteger и BigDecimal",
-    "Универсальные типы",
-    "Утилитные пакеты",
-    "Java 8. Анонимные функции. Stream API",
-    "Автоматизация составления Java-проектов", //POTOM cr
-    "Java annotations",
-    "Java reflection",
-    "Advanced generics",
-    "Advanced collections",
-    "Advanced multithreading / concurrency",
-    "Advanced OOP",
-    "Design patterns",
-    "JRE security, JVM internals",
-    "Desktop-приложения: технология JavaFX",
-    "Spring",
-    "Работа с XML и JSON",
-    "Введение в SQL",
-    "JDBC",
-    "Знакомство с Lombok и Log4J",
-    "Работа над ошибками (создание резюме для работы)",
+    {
+        t: "Вспоминаем основы js (Git)",//пишем todolist
+        icon: "github.png"
+    },
+    {
+        t: 'Общая характеристика языка Java',
+        icon: "java.png"
+    },
+    {
+        t: "Типы данных и основные операции с ними",
+        icon: "java.png"
+    },
+    {
+        t:  "Поток управления",
+        icon: "java.png"
+    },
+    {
+        t:  "Массивы",
+        icon: "java.png"
+    },
+    {
+        t: "Строки",
+        icon: "java.png"
+    },
+    {
+        t: "GIT. Контроль версии",
+        icon: "java.png"
+    },
+    {
+        t: "Введение в объектно-ориентированное программирование",
+        icon: "java.png"
+    },
+    {
+        t: "Отношения между объектами",
+        icon: "java.png"
+    },
+    {
+        t: "Наследование и полиморфизм",
+        icon: "java.png"
+    },
+    {
+        t: "Класс Object",
+        icon: "java.png"
+    },
+    {
+        t:"Внутренние классы",
+        icon: "java.png"
+    },
+    {
+        t: "Перечисление",
+        icon: "java.png"
+    },
+    {
+        t: "Работа с базами данных",
+        icon: "server.png"
+    },
+    {
+        t:  "Обработка ошибок и исключения",
+        icon: "java.png"
+    },
+    {
+        t:   "Система ввода-вывода",
+        icon: "java.png"
+    },
+    {
+        t: "Desktop-приложения",
+        icon: "java.png"
+    },
+    {
+        t: "Классы коллекций",
+        icon: "java.png"
+    },
+    {
+        t: "Знакомство с XML",
+        icon: "xml.png"
+    },
+    {
+        t: "Многопоточность",
+        icon: "java.png"
+    },
+    {
+        t: "Классы BigInteger и BigDecimal",
+        icon: "java.png"
+    }, 
+    {
+        t: "Универсальные типы",
+        icon: "java.png"
+    }, 
+    {
+        t: "Утилитные пакеты",
+        icon: "java.png"
+    }, 
+    {
+        t: "Java 8. Анонимные функции. Stream API",
+        icon: "api.png"
+    }, 
+    {
+        t: "Автоматизация составления Java-проектов", //POTOM cr
+        icon: "java.png"
+    }, 
+    {
+        t: "Java annotations",
+        icon: "java.png"
+    }, 
+    {
+        t: "Java reflection",
+        icon: "java.png"
+    }, 
+    {
+        t: "Advanced generics",
+        icon: "java.png"
+    }, 
+    {
+        t: "Advanced collections",
+        icon: "java.png"
+    }, 
+    {
+        t: "Advanced multithreading / concurrency",
+        icon: "java.png"
+    }, 
+    {
+        t: "Advanced OOP",
+        icon: "java.png"
+    }, 
+    {
+        t: "Design patterns",
+        icon: "java.png"
+    }, 
+    {
+        t: "JRE security, JVM internals",
+        icon: "java.png"
+    }, 
+    {
+        t: "Desktop-приложения: технология JavaFX",
+        icon: "java.png"
+    },  
+    {
+        t: "Работа с XML и JSON",
+        icon: "json.png"
+    }, 
+    {
+        t: "Введение в SQL",
+        icon: "mysql_2.png"
+    },  
+    {
+        t: "JDBC",
+        icon: "java.png"
+    },  
+    {
+        t: "Знакомство с Lombok и Log4J",
+        icon: "java.png"
+    },  
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    }
 ]
 
 const NodeJS = [
-    "Основы NodeJS",
-    "Node.js core",
-    "События. EventEmitter",
-    "Модули. NPM",
-    "Работа с файлами. Потоки и асинхронность",
-    "TCP, HTTP и HTTPS серверы",
-    "Web сокеты и модуль ws. Socket.io",
-    "Асинхронный поток. Модуль Async",
-    "Node.js и Mongo.db",
-    "Шаблонизаторы. Mustache, Jade, EJS",
-    "Веб-каркас для Node.js",
-    "Тестирование кода на Node.js",
-    "Работа над ошибками (создание резюме для работы)"
+    {
+        t: "Вспоминаем основы js (Git)",//пишем todolist
+        icon: "github.png"
+    },
+    {
+        t: "Основы NodeJS",
+        icon: "node.png"
+    },
+    {
+        t:  "Node.js core",
+        icon: "node.png"
+    },
+    {
+        t:   "События. EventEmitter",
+        icon: "node.png"
+    },
+    {
+        t: "Модули. NPM",
+        icon: "node.png"
+    },
+    {
+        t: "Работа с файлами. Потоки и асинхронность",
+        icon: "api.png"
+    },
+    {
+        t: "TCP, HTTP и HTTPS серверы",
+        icon: "api.png"
+    },
+    {
+        t: "Web сокеты и модуль ws. Socket.io",
+        icon: "api.png"
+    },
+    {
+        t: "Асинхронный поток. Модуль Async",
+        icon: "api.png"
+    },
+    {
+        t: "Node.js и Mongo.db",
+        icon: "api.png"
+    },
+    {
+        t: "Шаблонизаторы. Mustache, Jade, EJS",
+        icon: "js.png"
+    },
+    {
+        t: "Веб-каркас для Node.js",
+        icon: "node.png"
+    },
+    {
+        t: "Тестирование кода на Node.js",
+        icon: "node.png"
+    },
+    {
+        t:    "Работа над ошибками (создание резюме для работы)",
+        icon: "ditCode.png"
+    } 
 ]
 const list_Our_Courses = [{
         page : 'HTMLcss.html',

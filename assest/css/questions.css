@@ -124,13 +124,20 @@
 .contText {
     cursor: pointer;
 }
+.contText hr {
+    padding: 0;
+    margin: 0 0 0 1%;
+    border-top: 2px solid #b8b8b8;
+    justify-content: center;
+    width: 98%;
+}
 .contH2 {
-    box-shadow: 1px 7px 12px rgba(0, 0, 0, 0.548);
+    /* box-shadow:0px 0px 5px rgb(0 0 0 / 15%); */
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 0;
+    margin: 5px 0;
     /* background-color: azure; */
 }
 .contH2 h2{

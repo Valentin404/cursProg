@@ -114,6 +114,8 @@ dataQuest
         contText.appendChild(contH2)
         contText.appendChild(textP)
 
+        ind  < dataQuest.length -1  && contText.appendChild(document.createElement('hr'))
+
         contAll.appendChild(contText)
 
         contText.onclick = () => contText.classList.toggle('active')

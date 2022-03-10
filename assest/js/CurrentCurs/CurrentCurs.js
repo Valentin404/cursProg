@@ -12,9 +12,9 @@ function painAllInfo () {
     const price = CurC.price[langPrice] 
     let lessons = "";
     CurC.plan.forEach((l,i)=>lessons+=` <div class="contPlan ${i%2 ? 'black':''}">
-    <img class="PlaniconType" src="./assest/img/iconForCurs/github.png" alt="">
+    <img class="PlaniconType" src="./assest/img/iconForCurs/logo/${l.icon}" alt="">
     <span class="planSpan">${i+1}</span>
-    <p>${l}</p>
+    <p>${l.t}</p>
 </div>` )
     curreentCurs.innerHTML = `
 
