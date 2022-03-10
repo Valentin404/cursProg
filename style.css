@@ -684,8 +684,8 @@ label.mt10.valid {
     
 }
 * {
-    overflow-y: auto;
-	-webkit-overflow-scrolling:touch;
+    overflow-y: auto !important;
+	-webkit-overflow-scrolling:touch !important;
 }
 .scrolltotop:hover {
     background: #3ee792;
