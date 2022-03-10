@@ -681,12 +681,11 @@ label.mt10.valid {
     width: 40px;
     z-index: 9;
     /* -webkit-z-index: 9; */
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling:touch !important;
     
 }
-* {
-    overflow-y: auto !important;
-	-webkit-overflow-scrolling:touch !important;
-}
+
 .scrolltotop:hover {
     background: #3ee792;
     color: #ffffff;
