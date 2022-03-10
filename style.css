@@ -719,6 +719,11 @@ label.mt10.valid {
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
 }
+body {
+    /* overflow-y: scroll; */
+    -webkit-overflow-scrolling:touch;
+
+}
 .submenu::-webkit-scrollbar {
     width: 10px;
 }
