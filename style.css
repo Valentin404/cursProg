@@ -717,13 +717,13 @@ label.mt10.valid {
 .submenu {
     max-height: 350px;
     overflow-y: scroll;
-    -webkit-overflow-scrolling:touch;
+    -webkit-padding-end: 30px;
+    /* -webkit-overflow-scrolling:touch; */
 }
-body {
-    /* overflow-y: scroll; */
+/* body {
     -webkit-overflow-scrolling:touch;
 
-}
+} */
 .submenu::-webkit-scrollbar {
     width: 10px;
 }
