@@ -680,8 +680,13 @@ label.mt10.valid {
     text-align: center;
     width: 40px;
     z-index: 9;
+    /* -webkit-z-index: 9; */
+    
 }
-
+* {
+    overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
+}
 .scrolltotop:hover {
     background: #3ee792;
     color: #ffffff;
@@ -720,7 +725,6 @@ label.mt10.valid {
 }
 .submenu::-webkit-scrollbar {
     width: 10px;
-    /* background-color: #0be27a; */
 }
 .submenu::-webkit-scrollbar-thumb{
     background-color: #687275;
@@ -733,24 +737,17 @@ body::-webkit-scrollbar-thumb{
     background-color: #687275;
     border-radius: 20px;
 }
-/* .navbar-header{
-    position: fixed !important;
-    z-index: 999999;
-} */
+
 .row.no-margin{
     display: flex;
     justify-content: center;
 }
 .no-padding.col-sm-20.col-md-10.col-md-offset-2.col-lg-8 {
-    /* display: flex;
-    justify-content: center;
-    background-color: #171932; */
     margin: 0;
 }
 @media only screen and (max-width: 901px) {
     .submenu {
         position: relative !important;
-        /* top: -100px; */
     }
     
 }
