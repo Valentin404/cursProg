@@ -717,7 +717,7 @@ label.mt10.valid {
 .submenu {
     max-height: 350px;
     overflow-y: scroll;
-    -webkit-padding-end: 30px;
+    /* -webkit-padding-end: 30px; */
     /* -webkit-overflow-scrolling:touch; */
 }
 /* body {
