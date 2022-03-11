@@ -135,3 +135,15 @@ header.innerHTML =`
 
 
 
+setTimeout(()=>{
+const hasSub = document.querySelector('.has-sub')
+const header = document.querySelector('header')
+hasSub.addEventListener('click',e=>{
+        header.classList.toggle('active')
+    })
+
+    document.querySelector('.menu-toggle').addEventListener('click',()=>{
+        hasSub.className.includes('open') &&  header.classList.remove('active')
+    })
+},500)
+    // 

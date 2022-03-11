@@ -23,6 +23,11 @@ Version: 1.0
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 
+
+header.active {
+    height: 100vh;
+}
+
 /*--------------------------
     1. SLIDER AREA
 -----------------------------*/
