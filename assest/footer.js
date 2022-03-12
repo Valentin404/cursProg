@@ -58,8 +58,10 @@ header.innerHTML =`
     <div class="mainmenu-area-bg"></div>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header">
-                <a href="./index.html" class="navbar-brand">GOOD <span class="web">WEB</span>  ACADEMY</a>
+        <div class="navbar-header">
+        <img src="./assest/img/L.png" />
+        <a href="./index.html" class="navbar-brand">
+        GOOD <span class="web">WEB</span>  ACADEMY</a>
             </div>
             <div id="main-nav" class="stellarnav">
                 <ul id="nav" class="nav navbar-nav pull-right">

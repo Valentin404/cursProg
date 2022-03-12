@@ -48,7 +48,15 @@ header.active {
     color: white;
     font-size: 30px;
 }
-
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+.navbar-header img {
+    width: 30px;
+    height: 30px;
+    margin:0  10px;
+}
 .footer-logo a {
     color: white;
     font-size: 30px;
@@ -757,6 +765,7 @@ body::-webkit-scrollbar-thumb{
     }
     
 }
+
 @media only screen and (max-width: 1000px) {
     .row.promo-content {
         display: flex;
@@ -769,6 +778,7 @@ body::-webkit-scrollbar-thumb{
     ul#nav {
         max-height: 85vh;
     }
+   
 }
 @media screen and (max-width: 600px) {
     .contVideo iframe {
@@ -865,3 +875,40 @@ html {
       width: 80%;
       height: 80%;
   }
+
+
+  @media screen and (max-width: 902px) {
+
+    div.navbar-header img {
+        width: 24px ;
+        height: 24px;
+        margin-top: -15px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    
+    div.navbar-header img {
+        margin-top: 0;
+        margin-right:0;
+    }
+}
+@media screen and (max-width: 767px) {
+    div.navbar-header img {
+        margin-top: -17px;
+        
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .navbar-brand { 
+        display: none;
+    }
+    div.navbar-header img {
+       margin: 5px 10px 10px 10px;
+       width: 40px;
+       height: 40px;
+      
+    }
+    
+}
