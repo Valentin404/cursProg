@@ -22,11 +22,11 @@
 // if(localStorage.getItem('country')){
 // langPrice = 'rub_max'
 // }
-let C = 'rus'
-let langPrice = 'rub_max'
-let val = 'руб'
-let advanced = 9800
-let margin = 730
+let C = 'uk'
+let langPrice = 'uan_max'
+let val = 'грн'
+let advanced = 3500
+let margin = 250
 
 const changeLang = countr => {
     switch (countr) {
@@ -36,7 +36,16 @@ const changeLang = countr => {
             margin = 250
             langPrice = 'uan_max'
             C = 'uk'
+            break;
+        case 'Russia':
+            C = 'rus'
+            langPrice = 'rub_max'
+            val = 'руб'
+            advanced = 9800
+            margin = 730
+            break;
     }
+
 }
 
 
@@ -58,7 +67,7 @@ const checkCountry = () => {
         })
         .then(function (payload) {
 
-            // console.log(payload.location.country.name);
+            // console.log(payload.location.country);
             changeLang(payload.location.country.name)
             localStorage.setItem('country',payload.location.country.name)
          

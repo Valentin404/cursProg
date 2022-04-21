@@ -1,21 +1,99 @@
 const curreentCurs = document.querySelector('.curreentCurs')
 const phatname = window.location.pathname.split('/')
-const name = phatname[phatname.length-1]
+const name = phatname[phatname.length - 1]
 const btnZap = document.getElementById('btnZap')
+
+
+
+const currentCursLang = {
+    uk: {
+        start: 'Початок курсу',
+        recordin: 'Запис на курс',
+        standart: 'Стандарт',
+        PlanSinfo1: 'Заняття у группі',
+        PlanSinfo2: 'Видео-записи лекцій',
+        PlanSinfo3: 'Чат з тренером та группою',
+        PlanSinfo4: 'Перевірка домашніх завдань',
+        PlanSinfo5: 'Проект для портфоліо',
+        PlanSinfo6: 'Повна підтримка до першого працевлаштування',
+        PlanAinfo1: 'Все з пакету Стандарт',
+        PlanAinfo2: 'Можливість заморозити навчання до 12-ти місяців',
+        PlanAinfo3: 'Можливість проходити заняття повторно',
+        PlanAinfo4: '600 хвилин індивідуальних консультацій з викладачем на будь-яку тему',
+        PlanAinfo5: 'Допомога в працевлаштуванні',
+        payPart: 'Оплата курсу частинами',
+        zayavaForInd: 'Залиште заявку на індивідуальний підрахунок',
+        'paymeant': 'Платіж',
+        'morePaymeants': 'Платежі',
+        criptoPrice: 'Так само, будь-який курс можна оплатити криптовалютою',
+        writeCursDown: 'Записатися на курс',
+        privel: 'Привілеї',
+        teor: 'Теорія',
+        pogruz: 'Занурення у цей курс пройде у форматі видеолекцій та вебінарів, під час яких ви зможете задати будь-які питання, щоб вам було простіше заіфксувати всю нову інформацію.',
+        practicka: 'Практика',
+        getKnowladge: 'Отримані знання ми застосовуємо в практичних задачах після проходження кожної нової теми.',
+        support: 'Пітримка',
+        supportText: `Надаємо повну підтримку до Вашого працевлаштування та можемо допомогти
+    адаптуватися на новій роботі.`,
+        githube: `Ми допоможемо вам створити своє портфоліо, яке ви зможете показати майбутньому роботодавцю.`,
+        planStudy: 'План навчання',
+        hours: 'години',
+        lessons: 'уроків',
+        mouths: 'місяців'
+    },
+    rus: {
+        start: 'Начало курса',
+        recordin: 'Запись на курс',
+        standart: 'Стандарт',
+        PlanSinfo1: 'Занятия в группе',
+        PlanSinfo2: 'Видео записи лекций',
+        PlanSinfo3: 'Чат с тренером и группой',
+        PlanSinfo4: 'Проверка домашних заданий',
+        PlanSinfo5: 'Проект для портфолио',
+        PlanSinfo6: 'Полная поддержка до первого трудоустройства',
+        PlanAinfo1: 'Все из пакета Стандарт',
+        PlanAinfo2: 'Возможность заморозить обучение до 12-х месяцев',
+        PlanAinfo3: 'Возможность проходить занятия повторно',
+        PlanAinfo4: '600 мин индивидуальных консультаций с преподавателем на любую любую тему',
+        PlanAinfo5: 'помощь в трудоустройстве',
+        payPart: 'Оплата курса частями',
+        zayavaForInd: 'Оставьте заявку на индивидуальный просчет',
+        'paymeant': 'Платеж',
+        'morePaymeants': 'Платежa',
+        criptoPrice: 'Так же любой курс можно оплатить криптовалютой',
+        writeCursDown: 'Записаться на курс',
+        privel: 'Привелегии',
+        teor: 'Теория',
+        pogruz: 'Погружение в этот курс пройдёт в формате видеолекций и вебинаров, во время которых вы можете задавать любы вопросы, чтобы вам было проще закрепить всю новую информацию.',
+        practicka: 'Практика',
+        getKnowladge: 'Полученные знания мы применяем в практических задачах после похожденя каждой новой темы.',
+        support: 'Поддержка',
+        supportText: `Предоставляем полнную поддержку до Вашего трудоустройства и можем помочь
+    адаптироватся на новой работе.`,
+        githube: `Мы поможем вам создать свое портфолио которое вы сможете показать будущему
+    работодателю.`,
+        planStudy: 'План обучения',
+        hours: 'часа',
+        lessons: 'уроков',
+        mouths: 'месяцев'
+    }
+}
+
 
 const CurC = list_Our_Courses.find(d => d.page.includes(name))
 
 // 3500 advanced
 
-function painAllInfo () {
-   
-    const price = CurC.price[langPrice] 
+function painAllInfo() {
+    const price = CurC.price[langPrice]
+    const T = currentCursLang[C]
+
     let lessons = "";
-    CurC.plan.forEach((l,i)=>lessons+=` <div class="contPlan ${i%2 ? 'black':''}">
+    CurC.plan[C].forEach((l, i) => lessons += ` <div class="contPlan ${i%2 ? 'black':''}">
     <img class="PlaniconType" src="./assest/img/iconForCurs/logo/${l.icon}" alt="">
     <span class="planSpan">${i+1}</span>
     <p>${l.t}</p>
-</div>` )
+    </div>`)
     curreentCurs.innerHTML = `
 
 <div class="containerTitle">    
@@ -27,31 +105,31 @@ function painAllInfo () {
            
          
         </div>
-        <h2>${CurC.title}
+        <h2>${CurC.title[C]}
        
         </h2>
         <p>
-       ${CurC.text}
+       ${CurC.text[C]}
     </p>
     </div>
-    <h2 class="Start">Начало курса <span>${CurC.start}</span> </h2>
+    <h2 class="Start">${T.start}<span>${CurC.start}</span> </h2>
 <div class="GlobPriceAll">
-    <h2>Запись на курс</h2>
+    <h2>${T.recordin}</h2>
 
     <div class="priceAllCont">
 
         <div class="allPrice">
             <div class="contPrice">
-                <h2>Стандарт</h2>
+                <h2>${T.standart}</h2>
                 <h3 class="black">${price} ${val}</h3>
             </div>
             <div class="priceInfo">
-                <p>Занятия в группе</p>
-                <p>Видео записи лекций</p>
-                <p>Чат с тренером и группой</p>
-                <p>Проверка домашних заданий</p>
-                <p>Проект для портфолио</p>
-                <p>полная поддержка до первого трудоустройства</p>
+                <p>${T.PlanSinfo1}</p>
+                <p>${T.PlanSinfo2}</p>
+                <p>${T.PlanSinfo3}</p>
+                <p>${T.PlanSinfo4}</p>
+                <p>${T.PlanSinfo5}</p>
+                <p>${T.PlanSinfo6}</p>
             </div>
         </div>
 
@@ -61,25 +139,25 @@ function painAllInfo () {
                 <h3 class="black">${price+advanced} ${val}</h3>
             </div>
             <div class="priceInfo">
-                <p>Все из пакета Стандарт</p>
-                <p>Возможность заморозить обучение до 12-х месяцев</p>
-                <p>Возможность проходить занятия повторно</p>
-                <p>600 мин индивидуальных консультаций с преподавателем на любую любую тему</p>
-                <p>помощь в трудоустройстве</p>
+                <p>${T.PlanAinfo1}</p>
+                <p>${T.PlanAinfo2}</p>
+                <p>${T.PlanAinfo3}</p>
+                <p>${T.PlanAinfo4}</p>
+                <p>${T.PlanAinfo5}</p>
             </div>
         </div>
     </div>
 
     <div class="contPriceParce">
-        <h2>Оплата курса частями
+        <h2>${T.payPart}
         </h2>
-        <p>Оставьте заявку на индивидуальный просчет</p>
+        <p>${T.zayavaForInd}</p>
         <div class="PricePice">
             <div class="cuurentPricePice">
                 <img src="./assest/img/IconPay/tild3262-3533-4262-a334-303935343134__preview2.png" alt="">
-                <h3>1 Платеж</h3>
+                <h3>1 ${T.paymeant}</h3>
                 <div class="piceType">
-                    <p>Стандарт</p>
+                    <p>${T.standart}</p>
                     <p>1 x ${price} ${val}</p>
                 </div>
                 <div class="piceType">
@@ -90,9 +168,9 @@ function painAllInfo () {
             <div class="lineH"></div>
             <div class="cuurentPricePice">
                 <img src="./assest/img/IconPay/tild3262-3533-4262-a334-303935343134__preview2.png" alt="">
-                <h3>2 Платежa</h3>
+                <h3>2 ${T.morePaymeants}</h3>
                 <div class="piceType">
-                    <p>Стандарт</p>
+                    <p>${T.standart}</p>
                     <p>2 x ${(price/2)+margin} ${val}</p>
                 </div>
                 <div class="piceType">
@@ -103,9 +181,9 @@ function painAllInfo () {
             <div class="lineH"></div>
             <div class="cuurentPricePice">
                 <img src="./assest/img/IconPay/tild3262-3533-4262-a334-303935343134__preview2.png" alt="">
-                <h3>4 Платежа</h3>
+                <h3>4 ${T.morePaymeants}</h3>
                 <div class="piceType">
-                    <p>Стандарт</p>
+                    <p${T.standart}</p>
                     <p>4 x ${(price/4)+margin} ${val}</p>
                 </div>
                 <div class="piceType">
@@ -118,7 +196,7 @@ function painAllInfo () {
     </div>
 </div>
 <div class="contPayCript">
-    <h2>Так же любой курс можно оплатить криптовалютой </h2>
+    <h2>${T.criptoPrice}</h2>
     <div class="contLogoCript">
         <img src="./assest/img/cripto/usdt.png" logo="usdt"/>
         <img src="./assest/img/cripto/busd.png" logo="busd"/>
@@ -129,7 +207,7 @@ function painAllInfo () {
 
         <div class="contact-form">
 
-    <button onclick="openZap()" id="btnZap">Записаться на курс</button>
+    <button onclick="openZap()" id="btnZap">${T.writeCursDown}</button>
    
     </div>
 
@@ -137,32 +215,31 @@ function painAllInfo () {
 </div>
 
 <div class="globPriveleg">
-    <h2>Привелегии</h2>
+    <h2>${T.privel}</h2>
     <div class="globCurrentPriveleg">
         <div class="currentPriveleg">
             <div class="currentPrivelegContImg ">
 
                 <img src="./assest/img/iconForCurs/Teor/5219780.png" alt="">
-                <h3>Теория</h3>
+                <h3>${T.price}</h3>
             </div>
-            <p>Погружение в этот курс пройдёт в формате видеолекций и вебинаров, во время которых вы можете задавать любы вопросы, чтобы вам было проще закрепить всю новую информацию.</p>
+            <p>${T.pogruz}</p>
         </div>
         <div class="currentPriveleg reverse">
             <div class="currentPrivelegContImg">
 
                 <img src="./assest/img/iconForCurs/Prac/1456579.png" alt="">
-                <h3>Практика</h3>
+                <h3>${T.practicka}</h3>
             </div>
-            <p>Полученные знания мы применяем в практических задачах после похожденя каждой новой темы.</p>
+            <p>${T.getKnowladge}</p>
         </div>
         <div class="currentPriveleg">
             <div class="currentPrivelegContImg">
 
                 <img src="./assest/img/iconForCurs/pod/87724.png" alt="">
-                <h3>Поддержка</h3>
+                <h3>${T.support}</h3>
             </div>
-            <p>Предоставляем полнную поддержку до Вашего трудоустройства и можем помочь
-                адаптироватся на новой работе.</p>
+            <p>${T.supportText}</p>
         </div>
         <div class="currentPriveleg reverse">
             <div class="currentPrivelegContImg">
@@ -170,19 +247,18 @@ function painAllInfo () {
                 <img src="./assest/img/iconForCurs/github.png" alt="">
                 <h3>GitHub</h3>
             </div>
-            <p>Мы поможем вам создать свое портфолио которое вы сможете показать будущему
-                работодателю.
+            <p>${T.githube}
             </p>
         </div>
     </div>
 </div>
 <div class="globContPlan">
     <div class="planTitel">
-        <h2>План обучения</h2>
+        <h2>${T.planStudy}</h2>
 
-        <span class="PlanTime">${CurC.duration.hours} часа
-            <span>${CurC.duration.number_of_lessons} уроков</span>
-            <span>${CurC.time} месяцев</span>
+        <span class="PlanTime">${CurC.duration.hours} ${T.hours}
+            <span>${CurC.duration.number_of_lessons} ${T.lessons}</span>
+            <span>${CurC.time} ${T.mouths}</span>
         </span>
     </div>
     <div class="globPlan">
@@ -190,16 +266,17 @@ function painAllInfo () {
       
     </div>
 </div>
-
+<div id="whatUs">
 <div class="whyCont">
-    <h2>Почему именно мы?</h2>
+<h2>Почему именно мы?</h2>
     <p>Мы - ИТ курсы, которые в скором времени станут полноценной школой. Наши программы обновляются каждый год - таким не могут похвастаться ни одни курсы. Мы стараемся преподносить самые свежие материлы. Во время каждого курса мы берём во внимание вашу успеваемость и усваиваемость, чтобы подобрать наиболее оптимальный темп и подачу информации, так как наша главная задача - научить вас, а не отработать запланированный материал. Мы даём большой массив практики, так как именно во время работы вы будете запоминать наш материал лучше всего. Все наши курсы имеют уникальный план и последовательность тем, так как все наши задачи и домашние работы устроены по наростанию уровня сложности. Это значит, что если вы будете на 100% слушать все, что говорится при прохождении каждой темы, у вас никогда не возникнет вопросов по поводу домашней работы. 
 
         Большинство альтернативных курсов не могут таким похвастаться, так как часто бывает, что во время урока вы разбираете все материалы очень быстро и поверхностно, а потом уже дома тратите часы времени на то, чтобы понять, что этого вы на уроке не проходили и вам приходится все учить самостоятельно.
         Каждому студенту предоставляется сертификат об окончании курсов, который он в дальнейшем сможет продемонстрировать при приёме на работу
-        </p>
+                </p>
+            </div>
 </div>
- `
+        `
 
 
 }
@@ -208,20 +285,20 @@ function painAllInfo () {
 
 const contVideo = document.querySelector('.contVideo')
 
-function openZap(){
+function openZap() {
     contVideo.classList.add('active')
     window.scrollBy(0, -10000)
     document.getElementById('form-message').value = CurC.title
-    
+
 }
 
 const buttonSumbit = document.getElementById('buttonSumbit')
 
-buttonSumbit.addEventListener('click',e=>{
+buttonSumbit.addEventListener('click', e => {
     contVideo.classList.remove('active')
-    
+
 })
-document.querySelector('.contClose').addEventListener('click',()=>{
+document.querySelector('.contClose').addEventListener('click', () => {
     contVideo.classList.remove('active')
 
 })
