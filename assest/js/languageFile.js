@@ -338,6 +338,11 @@ const languageFile = {
 setTimeout(() => {
     for (const key in languageFile) {
         const id = document.querySelector('#' + key)
+        if('contGraficGlob' === key) {
+            console.log(id);
+           console.log( document.querySelector('#' + 'contGraficGlob'))
+           console.log(document);
+        }
         if (id) {
             for (const name in languageFile[key]) {
               

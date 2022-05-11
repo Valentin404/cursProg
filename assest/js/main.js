@@ -1,6 +1,6 @@
 // Тут пиши описание курса
 function paintThecurrentCours(index) {
-    window.scrollTo(pageYOffset, pageYOffset + 500)
+    // window.scrollTo(pageYOffset, pageYOffset + 500)
     let e = list_Our_Courses[index];
     document.querySelector(
         ".root__courses"
@@ -65,20 +65,20 @@ jQuery(document).on(
         /*---------------------------
                                                                                                                                                                                                                     SMOOTH SCROLL
                                                                                                                                                                                                                 -----------------------------*/
-        $(
-            'ul#nav li a[href^="#"], a.navbar-brand, a.scrolltotop, a.enroll-button'
-        ).on("click", function (event) {
-            var id = $(this).attr("href");
-            var offset = 60;
-            var target = $(id).offset().top - offset;
-            $("html, body").animate({
-                    scrollTop: target,
-                },
-                1500,
-                "easeInOutExpo"
-            );
-            event.preventDefault();
-        });
+        // $(
+        //     'ul#nav li a[href^="#"], a.navbar-brand, a.scrolltotop, a.enroll-button'
+        // ).on("click", function (event) {
+        //     var id = $(this).attr("href");
+        //     var offset = 60;
+        //     var target = $(id).offset().top - offset;
+        //     $("html, body").animate({
+        //             scrollTop: target,
+        //         },
+        //         1500,
+        //         "easeInOutExpo"
+        //     );
+        //     event.preventDefault();
+        // });
 
         /*----------------------------
                                                                                                                                                                                                                     MOBILE & DROPDOWN MENU
@@ -91,30 +91,30 @@ jQuery(document).on(
         /*----------------------------
                                                                                                                                                                                                                     SCROLL TO TOP
                                                                                                                                                                                                                 ------------------------------*/
-        $(window).scroll(function () {
-            var $totalHeight = $(window).scrollTop();
-            var $scrollToTop = $(".scrolltotop");
-            if ($totalHeight > 300) {
-                $(".scrolltotop").fadeIn();
-            } else {
-                $(".scrolltotop").fadeOut();
-            }
+        // $(window).scroll(function () {
+        //     var $totalHeight = $(window).scrollTop();
+        //     var $scrollToTop = $(".scrolltotop");
+        //     if ($totalHeight > 300) {
+        //         $(".scrolltotop").fadeIn();
+        //     } else {
+        //         $(".scrolltotop").fadeOut();
+        //     }
 
-            if ($totalHeight + $(window).height() === $(document).height()) {
-                $scrollToTop.css("bottom", "90px");
-            } else {
-                $scrollToTop.css("bottom", "20px");
-            }
-        });
+        //     if ($totalHeight + $(window).height() === $(document).height()) {
+        //         $scrollToTop.css("bottom", "90px");
+        //     } else {
+        //         $scrollToTop.css("bottom", "20px");
+        //     }
+        // });
 
         /*--------------------------
                                                                                                                                                                                                                    PARALLAX BACKGROUND
                                                                                                                                                                                                                 ----------------------------*/
-        $(window).stellar({
-            responsive: true,
-            positionProperty: "position",
-            horizontalScrolling: false,
-        });
+        // $(window).stellar({
+        //     responsive: true,
+        //     positionProperty: "position",
+        //     horizontalScrolling: false,
+        // });
 
         /*---------------------------
 	    HOME SLIDER
