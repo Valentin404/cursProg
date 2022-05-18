@@ -27,6 +27,7 @@ const currentCursLang = {
         'morePaymeants': 'Платежі',
         criptoPrice: 'Так само, будь-який курс можна оплатити криптовалютою',
         writeCursDown: 'Записатися на курс',
+        payCursDown: 'Оплатити курс онлайн',
         privel: 'Привілеї',
         teor: 'Теорія',
         pogruz: 'Занурення в цей курс пройде у форматі видеолекцій та вебінарів, під час яких ви зможете задати будь-які питання, щоб вам було простіше заіфксувати всю нову інформацію.',
@@ -39,7 +40,8 @@ const currentCursLang = {
         planStudy: 'План навчання',
         hours: 'години',
         lessons: 'уроків',
-        mouths: 'місяців'
+        mouths: 'місяців',
+        price :'Лекції'
     },
     rus: {
         start: 'Начало курса',
@@ -62,6 +64,7 @@ const currentCursLang = {
         'morePaymeants': 'Платежa',
         criptoPrice: 'Так же любой курс можно оплатить криптовалютой',
         writeCursDown: 'Записаться на курс',
+        payCursDown: 'Оплатить курс онлайн',
         privel: 'Привелегии',
         teor: 'Теория',
         pogruz: 'Погружение в этот курс пройдёт в формате видеолекций и вебинаров, во время которых вы можете задавать любы вопросы, чтобы вам было проще закрепить всю новую информацию.',
@@ -75,7 +78,8 @@ const currentCursLang = {
         planStudy: 'План обучения',
         hours: 'часа',
         lessons: 'уроков',
-        mouths: 'месяцев'
+        mouths: 'месяцев',
+        price : 'Лекции'
     }
 }
 
@@ -112,7 +116,7 @@ function painAllInfo() {
        ${CurC.text[C]}
     </p>
     </div>
-    <h2 class="Start">${T.start}<span>${CurC.start}</span> </h2>
+    <h2 class="Start">${T.start} <span>${CurC.start}</span> </h2>
 <div class="GlobPriceAll">
     <h2>${T.recordin}</h2>
 
@@ -206,9 +210,16 @@ function painAllInfo() {
     <div class="globZAp">
 
         <div class="contact-form">
+<div class="contForWriteCursDown">
+<button onclick="openZap()" id="btnZap">${T.writeCursDown}</button>
 
-    <button onclick="openZap()" id="btnZap">${T.writeCursDown}</button>
-   
+<button class="btnPay">
+<a href="https://prt.mn/Mt9qGamzRp">${T.payCursDown}</a>
+
+</button>
+
+</div>
+
     </div>
 
     </div>
@@ -285,10 +296,11 @@ function painAllInfo() {
 
 const contVideo = document.querySelector('.contVideo')
 
+
 function openZap() {
     contVideo.classList.add('active')
     window.scrollBy(0, -10000)
-    document.getElementById('form-message').value = CurC.title
+    document.getElementById('form-message').value = CurC.title[C]
 
 }
 

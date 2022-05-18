@@ -272,6 +272,7 @@ ul#nav li ul a,
     }
     .is-sticky .navbar-header {
         margin-top: 2px;
+        height: 60px
     }
     ul#nav li a {
         padding: 30px 10px;

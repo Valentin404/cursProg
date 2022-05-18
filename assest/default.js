@@ -45,19 +45,3 @@ document.querySelector('.submenu').innerHTML = list_Our_Courses
   .map((elem, ind) => `
         <li><a class="${ind+1}" href="./${elem.page}">${elem.title[C]}</a></li>
         `).join('')
-
-
-
-
-const navLi = document.querySelectorAll('#nav li')
-const defURL = '/cursProg/'
-if(window.location.pathname.length < 14 ){
-  navLi[0].classList.add('active')
-} else {
-  navLi.forEach(li => {
-  if( li.childNodes[0].href.includes(window.location.pathname)) {
-    li.classList.add('active')
-  }
-})
-}
-

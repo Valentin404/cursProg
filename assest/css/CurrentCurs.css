@@ -280,6 +280,31 @@
     justify-content: center;
 }
 
+.contForWriteCursDown {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+.contForWriteCursDown button {
+max-width: 208px;
+}
+.btnPay {
+    margin: 8px;
+    position: relative;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.btnPay a {
+  position: absolute;
+  padding: 13px 5px;
+
+}
 @media only screen and (max-width: 1166px) {
     .currentPriveleg {
         flex: 1 300px;

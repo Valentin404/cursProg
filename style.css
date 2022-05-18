@@ -20,6 +20,16 @@ Version: 1.0
     11. FOOTER AREA
     12. SCROLL TO TOP AREA
 ----------------------------------------------------------------------------------------*/
+.disclaimer {
+    display: none !important;
+    opacity: 0 !important;
+    z-index: -999 !important;
+    background-color:  transparent !important;
+    color: transparent !important;
+    font-size: 0px !important;
+    width: 0 !important;
+    height: 0 !important;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
 
@@ -928,4 +938,8 @@ html {
       
     }
     
+}
+
+#nav a.active {
+    color: #0be27a !important;
 }
