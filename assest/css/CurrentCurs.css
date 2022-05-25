@@ -305,6 +305,39 @@ max-width: 208px;
   padding: 13px 5px;
 
 }
+
+.containerPrice {
+/* background-color: #747b8c; */
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.black.discount {
+margin: 0;
+color: #747b8c;
+}
+.discountLine {
+ position: absolute;
+ width: 50%;
+ border-radius: 5px;
+ height: 2px;
+ background-color: #171932;   
+}
+.discountText {
+    color: white;
+}
+
+.priceDiscount {
+    /* display: none; */
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 24px;
+    color: white;
+}
+
+
 @media only screen and (max-width: 1166px) {
     .currentPriveleg {
         flex: 1 300px;

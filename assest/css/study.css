@@ -122,10 +122,15 @@ justify-content: space-between;
     
 }
 .currentPlan {
-    /* box-shadow: 0px 0px 6px black; */
     padding: 10px;
     flex: 0 30%;
     min-width: 220px;
 
     
+}
+/*  */
+@media only screen and (max-width: 472px) {
+    .studyInGroup {
+        height: 67px;
+    }
 }

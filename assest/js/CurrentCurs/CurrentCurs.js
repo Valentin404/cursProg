@@ -9,6 +9,8 @@ const currentCursLang = {
     uk: {
         start: 'Початок курсу',
         recordin: 'Запис на курс',
+        discount:'знимка до 6.06',
+        discountText :"знижка до 6.06",
         standart: 'Стандарт',
         PlanSinfo1: 'Заняття у группі',
         PlanSinfo2: 'Видео-записи лекцій',
@@ -46,6 +48,8 @@ const currentCursLang = {
     rus: {
         start: 'Начало курса',
         recordin: 'Запись на курс',
+        discount : '',
+        discountText :"",
         standart: 'Стандарт',
         PlanSinfo1: 'Занятия в группе',
         PlanSinfo2: 'Видео записи лекций',
@@ -88,8 +92,35 @@ const CurC = list_Our_Courses.find(d => d.page.includes(name))
 
 // 3500 advanced
 
+
+const discountBlock = (name, price,val,uan_discount,discountText)=>{
+    if(name === 'FrontEnd.html'){
+        return `
+        <div class="containerPrice">
+        <h3 class="black discount">${price} ${val}</h3>
+        <div class="discountLine"></div>
+        </div>  
+        <div class="priceDiscount">${uan_discount}</div>`
+         
+        //<div class="discountText">${discountText}</div> 
+    } else {
+        return `
+        <h3 class="black">${price} ${val}</h3>`
+    }
+}
+const payParts = (name, price, discount)=>{
+    if(name === 'FrontEnd.html'){
+        return discount
+    } else {
+        return price
+    }
+}
+
+
+
 function painAllInfo() {
     const price = CurC.price[langPrice]
+    const discount = CurC.price.uan_discount
     const T = currentCursLang[C]
 
     let lessons = "";
@@ -124,8 +155,8 @@ function painAllInfo() {
 
         <div class="allPrice">
             <div class="contPrice">
-                <h2>${T.standart}</h2>
-                <h3 class="black">${price} ${val}</h3>
+                <h2>${T.standart}</h2>  
+                ${discountBlock(CurC.page,price,val,CurC.price.uan_discount,T.discountText)}
             </div>
             <div class="priceInfo">
                 <p>${T.PlanSinfo1}</p>
@@ -140,7 +171,7 @@ function painAllInfo() {
         <div class="allPrice">
             <div class="contPrice">
                 <h2>Advanced</h2>
-                <h3 class="black">${price+advanced} ${val}</h3>
+                ${discountBlock(CurC.page,price+advanced,val,CurC.price.uan_discount+advanced,T.discountText)} 
             </div>
             <div class="priceInfo">
                 <p>${T.PlanAinfo1}</p>
@@ -162,11 +193,11 @@ function painAllInfo() {
                 <h3>1 ${T.paymeant}</h3>
                 <div class="piceType">
                     <p>${T.standart}</p>
-                    <p>1 x ${price} ${val}</p>
+                    <p>1 x ${payParts(CurC.page,price,discount)} ${val}</p>
                 </div>
                 <div class="piceType">
                     <p>Advanced</p>
-                    <p>1 x ${price+advanced} ${val}</p>
+                    <p>1 x ${payParts(CurC.page,price+advanced,discount+advanced)} ${val}</p>
                 </div>
             </div>
             <div class="lineH"></div>
@@ -175,11 +206,11 @@ function painAllInfo() {
                 <h3>2 ${T.morePaymeants}</h3>
                 <div class="piceType">
                     <p>${T.standart}</p>
-                    <p>2 x ${(price/2)+margin} ${val}</p>
+                    <p>2 x ${(payParts(CurC.page,price,discount)/2)+margin} ${val}</p>
                 </div>
                 <div class="piceType">
                     <p>Advanced</p>
-                    <p>2 x ${((price+advanced)/2)+margin} ${val}</p>
+                    <p>2 x ${(payParts(CurC.page,price+advanced,discount+advanced)/2)+margin} ${val}</p>
                 </div>
             </div>
             <div class="lineH"></div>
@@ -188,11 +219,11 @@ function painAllInfo() {
                 <h3>4 ${T.morePaymeants}</h3>
                 <div class="piceType">
                     <p${T.standart}</p>
-                    <p>4 x ${(price/4)+margin} ${val}</p>
+                    <p>4 x ${(payParts(CurC.page,price,discount)/4)+margin} ${val}</p>
                 </div>
                 <div class="piceType">
                     <p>Advanced</p>
-                    <p>4 x ${((price+advanced)/4)+margin} ${val}</p>
+                    <p>4 x ${(payParts(CurC.page,price+advanced,discount+advanced)/4)+margin} ${val}</p>
                 </div>
             </div>
 
@@ -215,7 +246,6 @@ function painAllInfo() {
 
 <button class="btnPay">
 <a href="https://prt.mn/Mt9qGamzRp">${T.payCursDown}</a>
-
 </button>
 
 </div>

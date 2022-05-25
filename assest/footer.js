@@ -58,7 +58,7 @@ const footerFile = {
         rus: 'Онлайн-курсы от GOOD WEB ACADEMY — это путь от основ программирования до работы с популярными и востребованными инструментами'
     },
     getInTouch: {
-        uk: 'Залишити заявку',
+        uk: 'Заповніть заявку',
         rus: 'Оставить заявку'
     },
     WeMeetWithYou: {
@@ -77,8 +77,8 @@ footer.innerHTML = `
 <a href="#">GOOD <span class="web">WEB</span> ACADEMY</a>
 </div>
 <p class="footer">${footerFile.footerT[C]}</p>
-<p>+38 (093) 810 82 39 <span>(Основной)</span></p>
-<p>+38 (093) 810 82 39 <span>(Запасной)</span></p>
+<p>+38 (093) 810 82 39 <span>(Основний)</span></p>
+<p>+38 (095) 474 50 36 <span>(Запасний)</span></p>
 <p>GOOD.WEB.ACADEMY.USA@gmail.com</p>
 </div>
             </div>
@@ -93,7 +93,7 @@ footer.innerHTML = `
                             </form>-->
                             <form id="mc-form" class="subscriber-form">
                             <label class="mt10" for="mc-email"></label>
-                            <input type="email" id="mc-email" placeholder="email@example.com">
+                            <input type="email" id="mc-email" placeholder="your@emailExample.ua">
                             <button type="submit" class="plus-btn"><i class="fa fa-paper-plane-o"></i></button>
                             </form>
                             </div>
@@ -228,9 +228,14 @@ setTimeout(() => {
     let L = window.location.pathname.split('/');
     L = L[L.length - 1]
 
+    if(L.trim() === '') {
+        return document.querySelector('#nav a.home').classList.add('active')
+    }
+
     a.forEach(a => {
         if (a.href.includes(L)) {
             if (a.className !== 'dd-toggle') {
+              
                 a.classList.add('active')
             }
         }
