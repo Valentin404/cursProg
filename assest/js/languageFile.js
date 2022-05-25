@@ -260,10 +260,6 @@ const languageFile = {
             uk: 'Графік',
             rus: 'График'
         },
-        '.twoLearned': {
-            uk: 'Номер',
-            rus: 'Номер'
-        },
         '.f1 h4': {
             uk: 'Вечірній час',
             rus: 'Вечернее время'
@@ -336,18 +332,16 @@ const languageFile = {
 }
 
 setTimeout(() => {
-
     for (const key in languageFile) {
         const id = document.querySelector('#' + key)
-    
         if (id) {
             for (const name in languageFile[key]) {
               
                  const teg  = document.querySelector('#' + key+ ' ' + name)
 
-                //  if(key === 'serteficat'){
+                //  if(key === 'forStudy'){
                 //      console.group(teg)
-                //      console.log(languageFile[key][name][C]);
+                //      console.log(languageFile[key][name]);
                 //      console.groupEnd()
                 //  }
 

@@ -111,5 +111,5 @@ if(countryC){
 
     changeLang(countryC)
 } else {
-    checkCountry()
+    // checkCountry()
 }
